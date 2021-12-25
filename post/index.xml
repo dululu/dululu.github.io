@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on one-blog</title>
+    <link>https://dululu.github.io/post/</link>
+    <description>Recent content in Posts on one-blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 26 Dec 2021 00:39:30 +0800</lastBuildDate><atom:link href="https://dululu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fxh Hugo dululu 测试文章</title>
+      <link>https://dululu.github.io/post/fxh/</link>
+      <pubDate>Sun, 26 Dec 2021 00:39:30 +0800</pubDate>
+      
+      <guid>https://dululu.github.io/post/fxh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

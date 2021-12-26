@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dululu.github.io/categories/</loc>
-    <lastmod>2021-12-26T00:39:30+08:00</lastmod>
-  </url><url>
     <loc>https://dululu.github.io/tags/dululu/</loc>
+    <lastmod>2021-12-26T21:49:39+08:00</lastmod>
+  </url><url>
+    <loc>https://dululu.github.io/tags/Hugo/</loc>
+    <lastmod>2021-12-26T21:49:39+08:00</lastmod>
+  </url><url>
+    <loc>https://dululu.github.io/</loc>
+    <lastmod>2021-12-26T21:49:39+08:00</lastmod>
+  </url><url>
+    <loc>https://dululu.github.io/post/</loc>
+    <lastmod>2021-12-26T21:49:39+08:00</lastmod>
+  </url><url>
+    <loc>https://dululu.github.io/tags/</loc>
+    <lastmod>2021-12-26T21:49:39+08:00</lastmod>
+  </url><url>
+    <loc>https://dululu.github.io/post/%E5%A7%8B/</loc>
+    <lastmod>2021-12-26T21:49:39+08:00</lastmod>
+  </url><url>
+    <loc>https://dululu.github.io/categories/</loc>
     <lastmod>2021-12-26T00:39:30+08:00</lastmod>
   </url><url>
     <loc>https://dululu.github.io/categories/dululu/</loc>
     <lastmod>2021-12-26T00:39:30+08:00</lastmod>
   </url><url>
     <loc>https://dululu.github.io/post/fxh/</loc>
-    <lastmod>2021-12-26T00:39:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dululu.github.io/tags/Hugo/</loc>
-    <lastmod>2021-12-26T00:39:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dululu.github.io/</loc>
-    <lastmod>2021-12-26T00:39:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dululu.github.io/post/</loc>
-    <lastmod>2021-12-26T00:39:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dululu.github.io/tags/</loc>
     <lastmod>2021-12-26T00:39:30+08:00</lastmod>
   </url>
 </urlset>

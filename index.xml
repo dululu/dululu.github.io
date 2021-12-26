@@ -6,7 +6,16 @@
     <description>Recent content on one-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Dec 2021 21:49:39 +0800</lastBuildDate><atom:link href="https://dululu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 23:12:40 +0800</lastBuildDate><atom:link href="https://dululu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown使用</title>
+      <link>https://dululu.github.io/post/Markdown%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 26 Dec 2021 23:12:40 +0800</pubDate>
+      
+      <guid>https://dululu.github.io/post/Markdown%E4%BD%BF%E7%94%A8/</guid>
+      <description>主要内容 Markdown是什么？ 谁创造了它？ 为什么要使用它？ 怎么使用？ 谁在用？ 尝试一下 正文 1. Markdown是什么？ Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。 Markdown也可以理解为将以MARKDOWN语法编</description>
+    </item>
+    
     <item>
       <title>始</title>
       <link>https://dululu.github.io/post/%E5%A7%8B/</link>

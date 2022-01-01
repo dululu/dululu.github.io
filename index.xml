@@ -6,7 +6,16 @@
     <description>Recent content on one-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Dec 2021 23:12:40 +0800</lastBuildDate><atom:link href="https://dululu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 19:42:29 +0800</lastBuildDate><atom:link href="https://dululu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022</title>
+      <link>https://dululu.github.io/post/2022/</link>
+      <pubDate>Sat, 01 Jan 2022 19:42:29 +0800</pubDate>
+      
+      <guid>https://dululu.github.io/post/2022/</guid>
+      <description>2022年的第一天 1月早啊，选择大于努力一直是你所相信的，可是也请不要放弃去努力。 人生就像是一条马尔科夫链 你的未来仅取决于你当下正在做的事，与你的过去无关。 Life is like a Markov chain, your future only depends on what you are doing now, and independent of your past</description>
+    </item>
+    
     <item>
       <title>Markdown使用</title>
       <link>https://dululu.github.io/post/Markdown%E4%BD%BF%E7%94%A8/</link>
@@ -14,24 +23,6 @@
       
       <guid>https://dululu.github.io/post/Markdown%E4%BD%BF%E7%94%A8/</guid>
       <description>主要内容 Markdown是什么？ 谁创造了它？ 为什么要使用它？ 怎么使用？ 谁在用？ 尝试一下 正文 1. Markdown是什么？ Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。 Markdown也可以理解为将以MARKDOWN语法编</description>
-    </item>
-    
-    <item>
-      <title>始</title>
-      <link>https://dululu.github.io/post/%E5%A7%8B/</link>
-      <pubDate>Sun, 26 Dec 2021 21:49:39 +0800</pubDate>
-      
-      <guid>https://dululu.github.io/post/%E5%A7%8B/</guid>
-      <description>无题 春蚕到死丝方尽，蜡炬成灰泪始干。 落红不是无情物，化作春泥更护花。 罗素，毛姆。</description>
-    </item>
-    
-    <item>
-      <title>Fxh Hugo dululu 测试文章</title>
-      <link>https://dululu.github.io/post/fxh/</link>
-      <pubDate>Sun, 26 Dec 2021 00:39:30 +0800</pubDate>
-      
-      <guid>https://dululu.github.io/post/fxh/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -6,7 +6,16 @@
     <description>Recent content in 时光 on one-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 01 Jan 2022 19:42:29 +0800</lastBuildDate><atom:link href="https://dululu.github.io/tags/%E6%97%B6%E5%85%89/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Jan 2022 22:17:59 +0800</lastBuildDate><atom:link href="https://dululu.github.io/tags/%E6%97%B6%E5%85%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>上传流程</title>
+      <link>https://dululu.github.io/post/%E4%B8%8A%E4%BC%A0%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Fri, 14 Jan 2022 22:17:59 +0800</pubDate>
+      
+      <guid>https://dululu.github.io/post/%E4%B8%8A%E4%BC%A0%E6%B5%81%E7%A8%8B/</guid>
+      <description>如何上传一篇blog. 1.打开blog的本地根目录，打开git 2.输入 hugo new post/xxx.md 3.开始用vscode进行编辑 4.保存(不要弄错编码格式) 5.运行测试网站hugo server -D，http://localhost:1313/ 即可预览网站。 6.使用 hugo 命令生成静态网站，默认所有的 HTML 文件都放在 public 目录</description>
+    </item>
+    
     <item>
       <title>2022</title>
       <link>https://dululu.github.io/post/2022/</link>

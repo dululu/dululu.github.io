@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on one-blog</title>
+    <link>https://dululu.github.io/categories/git/</link>
+    <description>Recent content in git on one-blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 27 Feb 2022 23:13:18 +0800</lastBuildDate><atom:link href="https://dululu.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git笔记</title>
+      <link>https://dululu.github.io/post/git%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 27 Feb 2022 23:13:18 +0800</pubDate>
+      
+      <guid>https://dululu.github.io/post/git%E7%AC%94%E8%AE%B0/</guid>
+      <description>git命令分类整理 全局设置 git config --global user.name xxx：设置全局用户名，信息记录在~/.gitconfig文件中 git config --global user.email xxx@xxx.com：设置全局邮箱地址，信息记录在~/.gitconfig文件中 git init：将当前目录配置成git仓库，信息记录在隐藏的.git文件夹中 常用命令 git add XX ：将X</description>
+    </item>
+    
+  </channel>
+</rss>

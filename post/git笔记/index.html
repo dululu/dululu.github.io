@@ -9,20 +9,20 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title>糟糕透了的时间段 | one-blog</title>
-    <meta property="og:title" content="糟糕透了的时间段 - one-blog">
+    <title>Git笔记 | one-blog</title>
+    <meta property="og:title" content="Git笔记 - one-blog">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2022-01-14T23:09:34&#43;08:00'>
+    <meta property="article:published_time" content='2022-02-27T23:13:18&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2022-01-14T23:09:34&#43;08:00'>
+    <meta property="article:modified_time" content='2022-02-27T23:13:18&#43;08:00'>
         
     <meta name="Keywords" content="[note]">
-    <meta name="description" content="黑暗的时光">
+    <meta name="description" content="新工具">
         
     <meta name="author" content="Xinghe">
-    <meta property="og:url" content="https://dululu.github.io/post/%E7%B3%9F%E7%B3%95%E9%80%8F%E4%BA%86%E7%9A%84%E6%97%B6%E9%97%B4%E6%AE%B5/">
+    <meta property="og:url" content="https://dululu.github.io/post/git%E7%AC%94%E8%AE%B0/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -70,16 +70,16 @@
     
     <article class="post">
         <header>
-            <h1 class="post-title">糟糕透了的时间段</h1>
+            <h1 class="post-title">Git笔记</h1>
         </header>
         <date class="post-meta meta-date">
-            2022年1月14日
+            2022年2月27日
         </date>
         
         <div class="post-meta">
             <span>|</span>
             
-            <span class="meta-category"><a href='/categories/emo'>emo</a></span>
+            <span class="meta-category"><a href='/categories/git'>git</a></span>
             
         </div>
         
@@ -91,12 +91,66 @@
         
         
         <div class="post-content">
-            <p>感觉最近诸事不顺，想做的事都没有做成，心态也跌落到谷底了，怎么会这样子，知行合一就是这么的难吗！
-每天都重复着同样的事情，热情都慢慢的被磨灭，专注专注，记录不要放弃。</p>
-<p><em><strong>明早起来刷acwing啦，8说辣么多了。</strong></em></p>
-<p>
-        <img class="mx-auto" alt="" src="2022-01-16-20-51-16.png" />   
-    </p>
+            <h2 id="git命令分类整理"><strong>git命令分类整理</strong></h2>
+<h3 id="全局设置"><strong>全局设置</strong></h3>
+<p><code>git config --global user.name xxx</code>：设置全局用户名，信息记录在~/.gitconfig文件中<br>
+<code>git config --global user.email xxx@xxx.com</code>：设置全局邮箱地址，信息记录在~/.gitconfig文件中<br>
+<code>git init</code>：将当前目录配置成git仓库，信息记录在隐藏的.git文件夹中</p>
+<h3 id="常用命令"><strong>常用命令</strong></h3>
+<p><code>git add XX</code> ：将XX文件添加到暂存区<br>
+<code>git commit -m &quot;给自己看的备注信息&quot;</code>：将暂存区的内容提交到当前分支<br>
+<code>git status</code>：查看仓库状态<br>
+<code>git log</code>：查看当前分支的所有版本<br>
+<code>git push -u (第一次需要-u以后不需要)</code> ：将当前分支推送到远程仓库<br>
+<code>git clone git@git.acwing.com:xxx/XXX.git</code>：将远程仓库XXX下载到当前目录下<br>
+<code>git branch</code>：查看所有分支和当前所处分支</p>
+<h3 id="查看命令"><strong>查看命令</strong></h3>
+<p><code>git diff XX</code>：查看XX文件相对于暂存区修改了哪些内容<br>
+<code>git status</code>：查看仓库状态<br>
+<code>git log</code>：查看当前分支的所有版本<br>
+<code>git log --pretty=oneline</code>：用一行来显示<br>
+<code>git reflog</code>：查看HEAD指针的移动历史（包括被回滚的版本）<br>
+<code>git branch</code>：查看所有分支和当前所处分支<br>
+<code>git pull</code> ：将远程仓库的当前分支与本地仓库的当前分支合并</p>
+<h3 id="删除命令"><strong>删除命令</strong></h3>
+<p><code>git rm --cached XX</code>：将文件从仓库索引目录中删掉，不希望管理这个文件<br>
+<code>git restore --staged xx</code>：==将xx从暂存区里移除==<br>
+<code>git checkout — XX或git restore XX</code>：==将XX文件尚未加入暂存区的修改全部撤销==</p>
+<h3 id="代码回滚"><strong>代码回滚</strong></h3>
+<p><code>git reset --hard HEAD^ 或git reset --hard HEAD~ </code>：将代码库回滚到上一个版本<br>
+<code>git reset --hard HEAD^^</code>：往上回滚两次，以此类推<br>
+<code>git reset --hard HEAD~100</code>：往上回滚100个版本<br>
+<code>git reset --hard 版本号</code>：回滚到某一特定版本</p>
+<h3 id="远程仓库"><strong>远程仓库</strong></h3>
+<p><code>git remote add origin git@git.acwing.com:xxx/XXX.git</code>：将本地仓库关联到远程仓库<br>
+<code>git push -u</code> (第一次需要-u以后不需要) ：将当前分支推送到远程仓库<br>
+<code>git push origin branch_name</code>：将本地的某个分支推送到远程仓库 <br>
+<code>git clone git@git.acwing.com:xxx/XXX.git</code>：将远程仓库XXX下载到当前目录下<br>
+<code>git push --set-upstream origin branch_name</code>：设置本地的branch_name分支对应远程仓库的branch_name分支<br>
+<code>git push -d origin branch_name</code>：删除远程仓库的branch_name分支<br>
+<code>git checkout -t origin/branch_name</code> 将远程的branch_name分支拉取到本地<br>
+<code>git pull</code> ：将远程仓库的当前分支与本地仓库的当前分支合并<br>
+<code>git pull origin branch_name</code>：将远程仓库的branch_name分支与本地仓库的当前分支合并<br>
+<code>git branch --set-upstream-to=origin/branch_name1 branch_name2</code>：将远程的branch_name1分支与本地的branch_name2分支对应
+分支命令<br>
+<code>git branch branch_name</code>：创建新分支<br>
+<code>git branch</code>：查看所有分支和当前所处分支<br>
+<code>git checkout -b branch_name</code>：创建并切换到branch_name这个分支<br>
+<code>git checkout branch_name</code>：切换到branch_name这个分支<br>
+<code>git merge branch_name</code>：将分支branch_name合并到当前分支上<br>
+<code>git branch -d branch_name</code>：删除本地仓库的branch_name分支<br>
+<code>git push --set-upstream origin branch_name</code>：设置本地的branch_name分支对应远程仓库的branch_name分支<br>
+<code>git push -d origin branch_name</code>：删除远程仓库的branch_name分支<br>
+<code>git checkout -t origin/branch_name</code> 将远程的branch_name分支拉取到本地<br>
+<code>git pull</code> ：将远程仓库的当前分支与本地仓库的当前分支合并 <br>
+<code>git pull origin branch_name</code>：将远程仓库的branch_name分支与本地仓库的当前分支合并<br>
+<code>git branch --set-upstream-to=origin/branch_name1 branch_name2</code>：将远程的branch_name1分支与本地的branch_name2分支对应</p>
+<h3 id="stash暂存"><strong>stash暂存</strong></h3>
+<p><code>git stash</code>：将工作区和暂存区中尚未提交的修改存入栈中<br>
+<code>git stash apply</code>：将栈顶存储的修改恢复到当前分支，但不删除栈顶元素<br>
+<code>git stash drop</code>：删除栈顶存储的修改<br>
+<code>git stash pop</code>：将栈顶存储的修改恢复到当前分支，同时删除栈顶元素<br>
+<code>git stash list</code>：查看栈中所有元素</p>
 
         </div>
 
@@ -108,6 +162,8 @@
 <div class="post-archive">
     <h2>See Also</h2>
     <ul class="listing">
+        
+        <li><a href="/post/%E7%B3%9F%E7%B3%95%E9%80%8F%E4%BA%86%E7%9A%84%E6%97%B6%E9%97%B4%E6%AE%B5/">糟糕透了的时间段</a></li>
         
         <li><a href="/post/%E4%B8%8A%E4%BC%A0%E6%B5%81%E7%A8%8B/">上传流程</a></li>
         

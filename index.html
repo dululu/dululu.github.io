@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="xh&#39;blog">
 <meta property="og:type" content="website">
@@ -412,7 +412,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-09 00:09:48" itemprop="dateModified" datetime="2024-06-09T00:09:48+08:00">2024-06-09</time>
+      <time title="修改时间：2024-06-09 01:19:43" itemprop="dateModified" datetime="2024-06-09T01:19:43+08:00">2024-06-09</time>
     </span>
 
   
@@ -421,7 +421,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>56</span>
+      <span>510</span>
     </span>
 </div>
 
@@ -435,12 +435,20 @@
           <blockquote>
 <p>记录一些可以尝试的方法和尝试</p>
 </blockquote>
-<h3 id="基础结构"><a href="#基础结构" class="headerlink" title="基础结构"></a>基础结构</h3><ul>
+<h1 id="A"><a href="#A" class="headerlink" title="A"></a>A</h1><h3 id="基础结构"><a href="#基础结构" class="headerlink" title="基础结构"></a>基础结构</h3><ul>
 <li>文件结构目录介绍(捡有用的说)<br><img src="/../images/jg.png"><br><img src="/../images/set.png"></li>
 </ul>
 <h3 id="生成文章"><a href="#生成文章" class="headerlink" title="生成文章"></a>生成文章</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&#x27;blog&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>保存在<code>source/_posts</code>下，可以直接在文件夹中创建。</p>
-
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p><code>Hexo</code>指定了3种布局：<code>post</code>(文章)、<code>page</code>(页面)和<code>draft</code>(草稿)，可在<code>_config.yml</code>中修改默认布局</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">default_layout: post</span><br></pre></td></tr></table></figure>
+<p>不同布局的作用：</p>
+<ul>
+<li>指定生成文件的存储地址；</li>
+<li>指定生成文件使用的<strong>脚手架模板</strong></li>
+</ul>
+<h5 id="draft的使用方法："><a href="#draft的使用方法：" class="headerlink" title="draft的使用方法："></a><code>draft</code>的使用方法：</h5><p>一般我们都会使用 <code>hexo new &lt;title&gt;</code> 来建立文章，这种建立方法会将新文章建立在 <code>source/_posts</code> 目录下，当使用 <code>hexo generate</code> 编译 <code>markdown</code> 文件时，会将其 <code>HTML</code> 结果编译在 <code>public</code> 目录下，之后 <code>hexo deploy</code> 将会把 <code>public</code> 目录下所有文章部署到 <code>GitHub</code>，这是我们熟悉的 <code>Hexo</code> 流程。</p>
+<h2 id="这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏"><a href="#这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏" class="headerlink" title="这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着 hexo deploy 一起部署到 GitHub，也就是 GitHub 可能会看到我们尚未完成的文章。- 建立文章草稿新文章将建立在 source/_drafts 目录下,因此 hexo generate 并不会将其编译到 public 目录下- 本机预览草稿- 将草稿发布为正式文章其中 &lt;filename&gt; 为不包含 md 后缀的文章名称。它的原理只是将文章从 source/_drafts 移动到 source/_posts 而已。### 脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下,默认模板文件中的键是Front-matter。 相对应的值可以指定三个占位符。### 文件名hexo默认使用标题作为文件名，其中文章名(post name)可以修改- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)# B## 布局设置&gt;NexT提供了4种布局(或称为主题、scheme)### Hexo：浮动预览内容### 菜单栏"></a>这种建立文章方式的缺点是：若我们<strong>同时编辑多篇文章</strong>，只要其中一篇文章尚未编辑完成，也会随着 <code>hexo deploy</code> 一起部署到 <code>GitHub</code>，也就是 <code>GitHub</code> 可能会看到我们尚未完成的文章。<br>- 建立文章草稿<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> draft &lt;title&gt;</span><br></pre></td></tr></table></figure><br>新文章将建立在 <code>source/_drafts</code> 目录下,因此 <code>hexo generate</code> 并不会将其编译到 <code>public</code> 目录下<br>- 本机预览草稿<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo S --draft</span><br></pre></td></tr></table></figure><br>- 将草稿发布为正式文章<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo P &lt;filename&gt;</span><br></pre></td></tr></table></figure><br>其中 <code>&lt;filename&gt;</code> 为不包含 <code>md</code> 后缀的文章名称。它的原理只是将文章从 <code>source/_drafts</code> 移动到 <code>source/_posts</code> 而已。<br>### 脚手架模板<br><code>Hexo</code>将不同布局的模板放置在<code>scaffolds</code>文件夹下,默认模板文件中的<strong>键</strong>是<a target="_blank" rel="noopener" href="https://hexo.io/docs/front-matter"><code>Front-matter</code></a>。 相对应的<strong>值</strong>可以指定三个占位符。<br>### 文件名<br><code>hexo</code>默认使用标题作为文件名，其中文章名(<code>post name</code>)可以修改<br>- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)<br># B<br>## 布局设置<br>&gt;<code>NexT</code>提供了4种布局(或称为主题、<code>scheme</code>)<br>### <code>Hexo</code>：浮动预览内容<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><br>### 菜单栏</h2>
       
     </div>
 
@@ -563,7 +571,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">xh</span>
   </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
     </div>
@@ -586,7 +594,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>

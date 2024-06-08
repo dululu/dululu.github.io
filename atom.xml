@@ -38,19 +38,10 @@
     <link href="https://dululu.github.io/2024/06/05/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/"/>
     <id>https://dululu.github.io/2024/06/05/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/</id>
     <published>2024-06-05T01:05:15.000Z</published>
-    <updated>2024-06-08T17:32:08.324Z</updated>
+    <updated>2024-06-08T17:38:34.607Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;记录一些可以尝试的方法和尝试&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h1&gt;&lt;h3 id=&quot;基础结构&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;瞎写-记录一些可以尝试的方法和尝试-A-基础结构-文件结构目录介绍-捡有用的说-生成文章保存在source-posts下，可以直接在文件夹中创建。-布局Hexo指定了3种布局：post-文章-、page-页面-和draft-草稿-，可在-config-yml中修改默认布局不同布局的作用：-指定生成文件的存储地址；-指定生成文件使用的脚手架模板-draft的使用方法：一般我们都会使用-hexo-new-来建立文章，这种建立方法会将新文章建立在-source-posts-目录下，当使用-hexo-generate-编译-markdown-文件时，会将其-HTML-结果编译在-public-目录下，之后-hexo-deploy-将会把-public-目录下所有文章部署到-GitHub，这是我们熟悉的-Hexo-流程。这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏&quot;&gt;&lt;a href=&quot;#瞎写-记录一些可以尝试的方法和尝试-A-基础结构-文件结构目录介绍-捡有用的说-生成文章保存在source-posts下，可以直接在文件夹中创建。-布局Hexo指定了3种布局：post-文章-、page-页面-和draft-草稿-，可在-config-yml中修改默认布局不同布局的作用：-指定生成文件的存储地址；-指定生成文件使用的脚手架模板-draft的使用方法：一般我们都会使用-hexo-new-来建立文章，这种建立方法会将新文章建立在-source-posts-目录下，当使用-hexo-generate-编译-markdown-文件时，会将其-HTML-结果编译在-public-目录下，之后-hexo-deploy-将会把-public-目录下所有文章部署到-GitHub，这是我们熟悉的-Hexo-流程。这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏&quot; class=&quot;headerlink&quot; title=&quot;瞎写&amp;gt;记录一些可以尝试的方法和尝试# A### 基础结构- 文件结构目录介绍(捡有用的说)### 生成文章保存在source/_posts下，可以直接在文件夹中创建。### 布局Hexo指定了3种布局：post(文章)、page(页面)和draft(草稿)，可在_config.yml中修改默认布局不同布局的作用：- 指定生成文件的存储地址；- 指定生成文件使用的脚手架模板##### draft的使用方法：一般我们都会使用 hexo new &amp;lt;title&amp;gt; 来建立文章，这种建立方法会将新文章建立在 source/_posts 目录下，当使用 hexo generate 编译 markdown 文件时，会将其 HTML 结果编译在 public 目录下，之后 hexo deploy 将会把 public 目录下所有文章部署到 GitHub，这是我们熟悉的 Hexo 流程。这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着 hexo deploy 一起部署到 GitHub，也就是 GitHub 可能会看到我们尚未完成的文章。- 建立文章草稿新文章将建立在 source/_drafts 目录下,因此 hexo generate 并不会将其编译到 public 目录下- 本机预览草稿- 将草稿发布为正式文章其中 &amp;lt;filename&amp;gt; 为不包含 md 后缀的文章名称。它的原理只是将文章从 source/_drafts 移动到 source/_posts 而已。### 脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下,默认模板文件中的键是Front-matter。 相对应的值可以指定三个占位符。### 文件名hexo默认使用标题作为文件名，其中文章名(post name)可以修改- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)# B## 布局设置&amp;gt;NexT提供了4种布局(或称为主题、scheme)### Hexo：浮动预览内容### 菜单栏&quot;&gt;&lt;/a&gt;瞎写&lt;br&gt;</summary>
     
     
     

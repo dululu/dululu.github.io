@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>日记™June24</title>
-    <url>/2024/06/06/%E6%97%A5%E8%AE%B0%E2%84%A2June24/</url>
-    <content><![CDATA[<p><del>塞翁失马焉知非福</del></p>
-<span id="more"></span>
-<h2 id="6月5日"><a href="#6月5日" class="headerlink" title="6月5日"></a>6月5日</h2><p>感觉已经陷入了一个黑洞，想逃缺逃不掉。我正在清醒地沉沦……😥<br><img src="/./../images/1.png"></p>
-<h2 id="6月6日"><a href="#6月6日" class="headerlink" title="6月6日"></a>6月6日</h2><p>选择一份好的工作，取决于自己，果然<code>infp</code>犹豫不决是我的内伤啊，必须要做出抉择，必须对价值做出决定。读一读<em>弗洛姆</em> 的书：<em>拿自己的个性去交换某些东西</em><br>学习一下<code>docker</code>和<code>npm</code>的知识，还有<code>js</code>,想学画画了。</p>
-<h2 id="6月7日"><a href="#6月7日" class="headerlink" title="6月7日"></a>6月7日</h2><p>高考已经是5年前的事情了，可是对于高中我没有一点快乐的回忆可言，一个人在黑夜里走了很久很远。<br>今天又去面试了一家希望能成功吧，感觉环境和人都很好，算是面试体验最好的一家了。</p>
-<h2 id="6月8日"><a href="#6月8日" class="headerlink" title="6月8日"></a>6月8日</h2><p>睡了一天我靠，得吧生物钟调过来了。别光说不做，Just do it !<br>早睡早起，保持良好的作息习惯。<br>关于各种银行卡，<code>借记卡</code>，<code>信用卡</code>，<code>储蓄卡</code><br>有时候学不会一件事，大多数是方法不对，选择合适自己的方法，坚持去做。<br>学画画，学画画。！</p>
-]]></content>
-      <tags>
-        <tag>记录一下</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2024/06/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -35,15 +21,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>顷刻炼化</title>
-    <url>/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/</url>
-    <content><![CDATA[<p>落魄谷中寒风吹，春秋蝉鸣少年归。<span id="more"></span><br>荡魂山处石人泪，定仙游走魔向北。<br>逆流河上万仙退，爱情不敌坚持泪。<br>宿命天成命中败。仙尊悔而我不悔。<br>早岁已知世事艰，仍许飞鸿荡云间。<br>一路寒风身如絮，命海沉浮客独行。<br>千磨万击心铸铁，殚精竭虑铸一剑。<br>今朝剑指叠云处，炼蛊炼人还炼天。</p>
-]]></content>
-      <tags>
-        <tag>蛊真人</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客化</title>
     <url>/2024/06/05/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/</url>
     <content><![CDATA[<blockquote>
@@ -53,18 +30,32 @@
 <li>文件结构目录介绍(捡有用的说)<br><img src="/../images/jg.png"><br><img src="/../images/set.png"></li>
 </ul>
 <h3 id="生成文章"><a href="#生成文章" class="headerlink" title="生成文章"></a>生成文章</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&#x27;blog&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>保存在<code>source/_posts</code>下，可以直接在文件夹中创建。</p>
-<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p><code>Hexo</code>指定了3种布局：<code>post</code>(文章)、<code>page</code>(页面)和<code>draft</code>(草稿)，可在<code>_config.yml</code>中修改默认布局</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">default_layout: post</span><br></pre></td></tr></table></figure>
-<p>不同布局的作用：</p>
-<ul>
-<li>指定生成文件的存储地址；</li>
-<li>指定生成文件使用的<strong>脚手架模板</strong></li>
-</ul>
-<h5 id="draft的使用方法："><a href="#draft的使用方法：" class="headerlink" title="draft的使用方法："></a><code>draft</code>的使用方法：</h5><p>一般我们都会使用 <code>hexo new &lt;title&gt;</code> 来建立文章，这种建立方法会将新文章建立在 <code>source/_posts</code> 目录下，当使用 <code>hexo generate</code> 编译 <code>markdown</code> 文件时，会将其 <code>HTML</code> 结果编译在 <code>public</code> 目录下，之后 <code>hexo deploy</code> 将会把 <code>public</code> 目录下所有文章部署到 <code>GitHub</code>，这是我们熟悉的 <code>Hexo</code> 流程。</p>
-<h2 id="这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏"><a href="#这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏" class="headerlink" title="这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着 hexo deploy 一起部署到 GitHub，也就是 GitHub 可能会看到我们尚未完成的文章。- 建立文章草稿新文章将建立在 source/_drafts 目录下,因此 hexo generate 并不会将其编译到 public 目录下- 本机预览草稿- 将草稿发布为正式文章其中 &lt;filename&gt; 为不包含 md 后缀的文章名称。它的原理只是将文章从 source/_drafts 移动到 source/_posts 而已。### 脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下,默认模板文件中的键是Front-matter。 相对应的值可以指定三个占位符。### 文件名hexo默认使用标题作为文件名，其中文章名(post name)可以修改- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)# B## 布局设置&gt;NexT提供了4种布局(或称为主题、scheme)### Hexo：浮动预览内容### 菜单栏"></a>这种建立文章方式的缺点是：若我们<strong>同时编辑多篇文章</strong>，只要其中一篇文章尚未编辑完成，也会随着 <code>hexo deploy</code> 一起部署到 <code>GitHub</code>，也就是 <code>GitHub</code> 可能会看到我们尚未完成的文章。<br>- 建立文章草稿<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> draft &lt;title&gt;</span><br></pre></td></tr></table></figure><br>新文章将建立在 <code>source/_drafts</code> 目录下,因此 <code>hexo generate</code> 并不会将其编译到 <code>public</code> 目录下<br>- 本机预览草稿<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">hexo S --draft</span><br></pre></td></tr></table></figure><br>- 将草稿发布为正式文章<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo P &lt;filename&gt;</span><br></pre></td></tr></table></figure><br>其中 <code>&lt;filename&gt;</code> 为不包含 <code>md</code> 后缀的文章名称。它的原理只是将文章从 <code>source/_drafts</code> 移动到 <code>source/_posts</code> 而已。<br>### 脚手架模板<br><code>Hexo</code>将不同布局的模板放置在<code>scaffolds</code>文件夹下,默认模板文件中的<strong>键</strong>是<a href="https://hexo.io/docs/front-matter"><code>Front-matter</code></a>。 相对应的<strong>值</strong>可以指定三个占位符。<br>### 文件名<br><code>hexo</code>默认使用标题作为文件名，其中文章名(<code>post name</code>)可以修改<br>- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)<br># B<br>## 布局设置<br>&gt;<code>NexT</code>提供了4种布局(或称为主题、<code>scheme</code>)<br>### <code>Hexo</code>：浮动预览内容<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><br>### 菜单栏</h2>]]></content>
+<h2 id="保存在source-posts下，可以直接在文件夹中创建。-布局Hexo指定了3种布局：post-文章-、page-页面-和draft-草稿-，可在-config-yml中修改默认布局不同布局的作用：-指定生成文件的存储地址；-指定生成文件使用的脚手架模板-draft的使用方法：一般我们都会使用-hexo-new-来建立文章，这种建立方法会将新文章建立在-source-posts-目录下，当使用-hexo-generate-编译-markdown-文件时，会将其-HTML-结果编译在-public-目录下，之后-hexo-deploy-将会把-public-目录下所有文章部署到-GitHub，这是我们熟悉的-Hexo-流程。这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏"><a href="#保存在source-posts下，可以直接在文件夹中创建。-布局Hexo指定了3种布局：post-文章-、page-页面-和draft-草稿-，可在-config-yml中修改默认布局不同布局的作用：-指定生成文件的存储地址；-指定生成文件使用的脚手架模板-draft的使用方法：一般我们都会使用-hexo-new-来建立文章，这种建立方法会将新文章建立在-source-posts-目录下，当使用-hexo-generate-编译-markdown-文件时，会将其-HTML-结果编译在-public-目录下，之后-hexo-deploy-将会把-public-目录下所有文章部署到-GitHub，这是我们熟悉的-Hexo-流程。这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着-hexo-deploy-一起部署到-GitHub，也就是-GitHub-可能会看到我们尚未完成的文章。-建立文章草稿新文章将建立在-source-drafts-目录下-因此-hexo-generate-并不会将其编译到-public-目录下-本机预览草稿-将草稿发布为正式文章其中-为不包含-md-后缀的文章名称。它的原理只是将文章从-source-drafts-移动到-source-posts-而已。-脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下-默认模板文件中的键是Front-matter。-相对应的值可以指定三个占位符。-文件名hexo默认使用标题作为文件名，其中文章名-post-name-可以修改-默认将输入标题作为文件名，还可以添加时间信息-可以但没必要😅😅-B-布局设置-NexT提供了4种布局-或称为主题、scheme-Hexo：浮动预览内容-菜单栏" class="headerlink" title="保存在source/_posts下，可以直接在文件夹中创建。### 布局Hexo指定了3种布局：post(文章)、page(页面)和draft(草稿)，可在_config.yml中修改默认布局不同布局的作用：- 指定生成文件的存储地址；- 指定生成文件使用的脚手架模板##### draft的使用方法：一般我们都会使用 hexo new &lt;title&gt; 来建立文章，这种建立方法会将新文章建立在 source/_posts 目录下，当使用 hexo generate 编译 markdown 文件时，会将其 HTML 结果编译在 public 目录下，之后 hexo deploy 将会把 public 目录下所有文章部署到 GitHub，这是我们熟悉的 Hexo 流程。这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着 hexo deploy 一起部署到 GitHub，也就是 GitHub 可能会看到我们尚未完成的文章。- 建立文章草稿新文章将建立在 source/_drafts 目录下,因此 hexo generate 并不会将其编译到 public 目录下- 本机预览草稿- 将草稿发布为正式文章其中 &lt;filename&gt; 为不包含 md 后缀的文章名称。它的原理只是将文章从 source/_drafts 移动到 source/_posts 而已。### 脚手架模板Hexo将不同布局的模板放置在scaffolds文件夹下,默认模板文件中的键是Front-matter。 相对应的值可以指定三个占位符。### 文件名hexo默认使用标题作为文件名，其中文章名(post name)可以修改- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)# B## 布局设置&gt;NexT提供了4种布局(或称为主题、scheme)### Hexo：浮动预览内容### 菜单栏"></a>保存在<code>source/_posts</code>下，可以直接在文件夹中创建。<br>### 布局<br><code>Hexo</code>指定了3种布局：<code>post</code>(文章)、<code>page</code>(页面)和<code>draft</code>(草稿)，可在<code>_config.yml</code>中修改默认布局<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">default_layout: post</span><br></pre></td></tr></table></figure><br>不同布局的作用：<br>- 指定生成文件的存储地址；<br>- 指定生成文件使用的<strong>脚手架模板</strong><br>##### <code>draft</code>的使用方法：<br>一般我们都会使用 <code>hexo new &lt;title&gt;</code> 来建立文章，这种建立方法会将新文章建立在 <code>source/_posts</code> 目录下，当使用 <code>hexo generate</code> 编译 <code>markdown</code> 文件时，会将其 <code>HTML</code> 结果编译在 <code>public</code> 目录下，之后 <code>hexo deploy</code> 将会把 <code>public</code> 目录下所有文章部署到 <code>GitHub</code>，这是我们熟悉的 <code>Hexo</code> 流程。<br>这种建立文章方式的缺点是：若我们<strong>同时编辑多篇文章</strong>，只要其中一篇文章尚未编辑完成，也会随着 <code>hexo deploy</code> 一起部署到 <code>GitHub</code>，也就是 <code>GitHub</code> 可能会看到我们尚未完成的文章。<br>- 建立文章草稿<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> draft &lt;title&gt;</span><br></pre></td></tr></table></figure><br>新文章将建立在 <code>source/_drafts</code> 目录下,因此 <code>hexo generate</code> 并不会将其编译到 <code>public</code> 目录下<br>- 本机预览草稿<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">hexo S --draft</span><br></pre></td></tr></table></figure><br>- 将草稿发布为正式文章<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo P &lt;filename&gt;</span><br></pre></td></tr></table></figure><br>其中 <code>&lt;filename&gt;</code> 为不包含 <code>md</code> 后缀的文章名称。它的原理只是将文章从 <code>source/_drafts</code> 移动到 <code>source/_posts</code> 而已。<br>### 脚手架模板<br><code>Hexo</code>将不同布局的模板放置在<code>scaffolds</code>文件夹下,默认模板文件中的<strong>键</strong>是<a href="https://hexo.io/docs/front-matter"><code>Front-matter</code></a>。 相对应的<strong>值</strong>可以指定三个占位符。<br>### 文件名<br><code>hexo</code>默认使用标题作为文件名，其中文章名(<code>post name</code>)可以修改<br>- 默认将输入标题作为文件名，还可以添加时间信息(可以但没必要😅😅)<br># B<br>## 布局设置<br>&gt;<code>NexT</code>提供了4种布局(或称为主题、<code>scheme</code>)<br>### <code>Hexo</code>：浮动预览内容<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><br>### 菜单栏</h2>]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记™June24</title>
+    <url>/2024/06/06/%E6%97%A5%E8%AE%B0%E2%84%A2June24/</url>
+    <content><![CDATA[<p><del>塞翁失马焉知非福</del></p>
+<span id="more"></span>
+<h2 id="6月5日"><a href="#6月5日" class="headerlink" title="6月5日"></a>6月5日</h2><p>感觉已经陷入了一个黑洞，想逃缺逃不掉。我正在清醒地沉沦……😥<br><img src="/./../images/1.png"></p>
+<h2 id="6月6日"><a href="#6月6日" class="headerlink" title="6月6日"></a>6月6日</h2><p>选择一份好的工作，取决于自己，果然<code>infp</code>犹豫不决是我的内伤啊，必须要做出抉择，必须对价值做出决定。读一读<em>弗洛姆</em> 的书：<em>拿自己的个性去交换某些东西</em><br>学习一下<code>docker</code>和<code>npm</code>的知识，还有<code>js</code>,想学画画了。</p>
+<h2 id="6月7日"><a href="#6月7日" class="headerlink" title="6月7日"></a>6月7日</h2><p>高考已经是5年前的事情了，可是对于高中我没有一点快乐的回忆可言，一个人在黑夜里走了很久很远。<br>今天又去面试了一家希望能成功吧，感觉环境和人都很好，算是面试体验最好的一家了。</p>
+<h2 id="6月8日"><a href="#6月8日" class="headerlink" title="6月8日"></a>6月8日</h2><p>睡了一天我靠，得吧生物钟调过来了。别光说不做，Just do it !<br>早睡早起，保持良好的作息习惯。<br>关于各种银行卡，<code>借记卡</code>，<code>信用卡</code>，<code>储蓄卡</code><br>有时候学不会一件事，大多数是方法不对，选择合适自己的方法，坚持去做。<br>学画画，学画画。！</p>
+]]></content>
+      <tags>
+        <tag>记录一下</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>顷刻炼化</title>
+    <url>/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/</url>
+    <content><![CDATA[<p>落魄谷中寒风吹，春秋蝉鸣少年归。<span id="more"></span><br>荡魂山处石人泪，定仙游走魔向北。<br>逆流河上万仙退，爱情不敌坚持泪。<br>宿命天成命中败。仙尊悔而我不悔。<br>早岁已知世事艰，仍许飞鸿荡云间。<br>一路寒风身如絮，命海沉浮客独行。<br>千磨万击心铸铁，殚精竭虑铸一剑。<br>今朝剑指叠云处，炼蛊炼人还炼天。</p>
+]]></content>
+      <tags>
+        <tag>蛊真人</tag>
       </tags>
   </entry>
 </search>

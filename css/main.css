@@ -6,8 +6,8 @@
   --blockquote-color: #666;
   --link-color: #555;
   --link-hover-color: #222;
-  --brand-color: #fff;
-  --brand-hover-color: #fff;
+  --brand-color: #000;
+  --brand-hover-color: #ffc0cb;
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
@@ -1205,7 +1205,7 @@ pre code {
 }
 .headband {
   background: var(--theme-color);
-  height: 3px;
+  height: 0px;
 }
 @media (max-width: 991px) {
   .headband {
@@ -1389,7 +1389,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #7af265;
+    background: #ffc4f0;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);

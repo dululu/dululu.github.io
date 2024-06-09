@@ -1353,7 +1353,7 @@ pre code {
 }
 @media (max-width: 991px) {
   .sidebar {
-    left: -200px;
+    left: -250px;
   }
   .sidebar-active .sidebar {
     left: 0;
@@ -1367,7 +1367,7 @@ pre code {
     top: 0;
     transition: 0.2s ease-out;
     transition-property: left, right;
-    width: 200px;
+    width: 250px;
     z-index: 20;
   }
   .sidebar a {
@@ -1389,7 +1389,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #81ebff;
+    background: #7af265;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1788,6 +1788,7 @@ pre code {
   color: #f00;
   display: inline-block;
   margin: 0 5px;
+  animation: icon-animate 1.33s ease-in-out infinite;
 }
 @keyframes icon-animate {
   0%, 100% {
@@ -2748,7 +2749,7 @@ header.header {
 .main-inner {
   border-radius: initial;
   box-sizing: border-box;
-  width: calc(100% - 162px);
+  width: calc(100% - 232px);
 }
 @media (max-width: 991px) {
   .main-inner {
@@ -2757,7 +2758,7 @@ header.header {
   }
 }
 .footer-inner {
-  padding-left: 162px;
+  padding-left: 232px;
 }
 @media (max-width: 991px) {
   .footer-inner {
@@ -2767,7 +2768,7 @@ header.header {
   }
 }
 .column {
-  width: 150px;
+  width: 220px;
 }
 @media (max-width: 991px) {
   .column {

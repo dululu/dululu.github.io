@@ -6,7 +6,7 @@
   <link href="https://dululu.github.io/atom.xml" rel="self"/>
   
   <link href="https://dululu.github.io/"/>
-  <updated>2024-06-09T18:11:12.084Z</updated>
+  <updated>2024-06-14T18:33:57.422Z</updated>
   <id>https://dululu.github.io/</id>
   
   <author>
@@ -17,31 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo博客</title>
-    <link href="https://dululu.github.io/2024/06/09/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/"/>
-    <id>https://dululu.github.io/2024/06/09/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/</id>
-    <published>2024-06-09T01:05:15.000Z</published>
-    <updated>2024-06-09T18:11:12.084Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;很乱很乱&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="hexo" scheme="https://dululu.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>日记™June24</title>
     <link href="https://dululu.github.io/2024/06/06/%E6%97%A5%E8%AE%B0%E2%84%A2June24/"/>
     <id>https://dululu.github.io/2024/06/06/%E6%97%A5%E8%AE%B0%E2%84%A2June24/</id>
     <published>2024-06-06T01:05:15.000Z</published>
-    <updated>2024-06-11T20:32:12.454Z</updated>
+    <updated>2024-06-14T18:33:57.422Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;del&gt;塞翁失马焉知非福&lt;/del&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;塞翁失马焉知非福，KeepAlive&lt;/p&gt;</summary>
     
     
     
@@ -79,6 +62,23 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客</title>
+    <link href="https://dululu.github.io/2022/06/09/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/"/>
+    <id>https://dululu.github.io/2022/06/09/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8B%E8%B7%AF/</id>
+    <published>2022-06-09T01:05:15.000Z</published>
+    <updated>2024-06-11T21:22:42.605Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;很乱很乱&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://dululu.github.io/tags/hexo/"/>
     
   </entry>
   

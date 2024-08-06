@@ -6,7 +6,7 @@
   <link href="https://dululu.github.io/atom.xml" rel="self"/>
   
   <link href="https://dululu.github.io/"/>
-  <updated>2024-08-06T14:36:14.756Z</updated>
+  <updated>2024-08-06T19:33:19.373Z</updated>
   <id>https://dululu.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://dululu.github.io/2024/08/07/Docker-1/"/>
+    <id>https://dululu.github.io/2024/08/07/Docker-1/</id>
+    <published>2024-08-07T01:05:15.000Z</published>
+    <updated>2024-08-06T19:33:19.373Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Docker是容器的一种实现，是一个容器化的解决方案和平台&lt;/li&gt;
+&lt;li&gt;容器是一种&lt;strong&gt;虚拟化&lt;/strong&gt;技术，是一个独立的环境，不需要在容器中运行一个完整的操作系统</summary>
+    
+    
+    
+    
+    <category term="学习" scheme="https://dululu.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>日记™August24</title>
@@ -89,10 +108,13 @@
     <link href="https://dululu.github.io/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/"/>
     <id>https://dululu.github.io/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/</id>
     <published>2024-06-05T01:05:15.000Z</published>
-    <updated>2024-08-06T14:14:58.892Z</updated>
+    <updated>2024-08-06T19:34:05.408Z</updated>
     
     
-    <summary type="html">&lt;p&gt;古月方源最近很火啊，可惜我已经对这种爽文套路男主没有读下去的动力，也不是讨厌，可能真的·老·了吧😥&lt;br&gt;落魄谷中寒风吹，春秋蝉鸣少年归。</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;古月方源最近很火啊，可惜我已经对这种爽文套路男主没有读下去的动力，也不是讨厌，可能真的·老·了吧😥&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;落魄谷中寒风吹，春秋蝉鸣少年归。</summary>
     
     
     

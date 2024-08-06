@@ -20,25 +20,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":250,"width_dual_column":220,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="xh&#39;blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Always on the way">
-<meta property="og:url" content="https://dululu.github.io/tags/%E7%94%B5%E5%BD%B1/index.html">
+    <meta name="description" content="Docker是容器的一种实现，是一个容器化的解决方案和平台 容器是一种虚拟化技术，是一个独立的环境，不需要在容器中运行一个完整的操作系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker">
+<meta property="og:url" content="https://dululu.github.io/2024/08/07/Docker-1/index.html">
 <meta property="og:site_name" content="Always on the way">
-<meta property="og:description" content="xh&#39;blog">
+<meta property="og:description" content="Docker是容器的一种实现，是一个容器化的解决方案和平台 容器是一种虚拟化技术，是一个独立的环境，不需要在容器中运行一个完整的操作系统">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/user-attachments/assets/80b87f3b-aa89-460d-9121-6667c5b19481">
+<meta property="og:image" content="https://github.com/user-attachments/assets/f6c1de52-aa29-4fe8-8a9f-86e38b29f82b">
+<meta property="og:image" content="https://github.com/user-attachments/assets/9450db15-bac3-49da-9743-84d44c34016d">
+<meta property="article:published_time" content="2024-08-07T01:05:15.000Z">
+<meta property="article:modified_time" content="2024-08-06T19:33:19.373Z">
 <meta property="article:author" content="xh">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/user-attachments/assets/80b87f3b-aa89-460d-9121-6667c5b19481">
 
 
-<link rel="canonical" href="https://dululu.github.io/tags/%E7%94%B5%E5%BD%B1/">
+<link rel="canonical" href="https://dululu.github.io/2024/08/07/Docker-1/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/电影/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dululu.github.io/2024/08/07/Docker-1/","path":"2024/08/07/Docker-1/","title":"Docker"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: 电影 | Always on the way</title>
+<title>Docker | Always on the way</title>
   
 
 
@@ -125,7 +132,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -138,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8Docker"><span class="nav-number">1.</span> <span class="nav-text">安装和使用Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="nav-number">1.1.</span> <span class="nav-text">基本原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8E%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.1.1.</span> <span class="nav-text">与虚拟机的区别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.2.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Docker%E4%BB%93%E5%BA%93"><span class="nav-number">1.2.1.</span> <span class="nav-text">Docker仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="nav-number">1.2.2.</span> <span class="nav-text">基本结构</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E5%8C%96%E5%92%8CDockerfile"><span class="nav-number">2.</span> <span class="nav-text">容器化和Dockerfile</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dockerfile"><span class="nav-number">2.1.</span> <span class="nav-text">Dockerfile</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DockerDesktop"><span class="nav-number">2.2.</span> <span class="nav-text">DockerDesktop</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -189,51 +197,166 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">电影
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dululu.github.io/2024/08/07/Docker-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/21.jpg">
+      <meta itemprop="name" content="xh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Always on the way">
+      <meta itemprop="description" content="xh'blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Docker | Always on the way">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Docker
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
+
+      <time title="创建时间：2024-08-07 09:05:15 / 修改时间：03:33:19" itemprop="dateCreated datePublished" datetime="2024-08-07T09:05:15+08:00">2024-08-07</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>400</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><ul>
+<li>Docker是容器的一种实现，是一个容器化的解决方案和平台</li>
+<li>容器是一种<strong>虚拟化</strong>技术，是一个独立的环境，不需要在容器中运行一个完整的操作系统<span id="more"></span></li>
+</ul>
+<h2 id="安装和使用Docker"><a href="#安装和使用Docker" class="headerlink" title="安装和使用Docker"></a>安装和使用Docker</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/dululu/GitNote/issues/62">介绍</a><br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Ozb9mZg7MVM">Docker视频</a></p>
+</blockquote>
+<h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h3><h4 id="与虚拟机的区别"><a href="#与虚拟机的区别" class="headerlink" title="与虚拟机的区别"></a><strong>与虚拟机的区别</strong></h4><p><img src="https://github.com/user-attachments/assets/80b87f3b-aa89-460d-9121-6667c5b19481"></p>
+<p><strong>优点🟥:</strong></p>
+<ul>
+<li>将<strong>物理资源</strong>虚拟为多个<strong>逻辑资源</strong></li>
+<li>每个逻辑资源都有自己的操作系统，CPU,内存，硬盘，网络接口</li>
+<li>实现资源整合，实现多台服务器功能</li>
+</ul>
+<p><strong>缺点🟩：</strong></p>
+<ul>
+<li>每个虚拟机要占用大量资源</li>
+<li>启动速度慢</li>
+</ul>
+<blockquote>
+<p>许多时候需要的只是一个Web服务器，对<strong>操作系统</strong>的要求不是很高，却占用了大量的资源</p>
+</blockquote>
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/f6c1de52-aa29-4fe8-8a9f-86e38b29f82b">
+
+<p><strong>优点🟩：</strong></p>
+<ul>
+<li>使用宿主机的操作系统，启动快，占用资源少</li>
+</ul>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p><code>镜像</code> <code>容器</code> <code>仓库</code><br>镜像是模板，容器是实例;<br>就像<code>python</code>中的类<code>Class</code>和对象<code>Object</code>，对象是类的一个实例。</p>
+<img width="516" alt="image" src="https://github.com/user-attachments/assets/9450db15-bac3-49da-9743-84d44c34016d">
+
+<h4 id="Docker仓库"><a href="#Docker仓库" class="headerlink" title="Docker仓库"></a>Docker仓库</h4><p><code>Dockerhub </code>类似于<code>Github</code>存储和分享镜像。</p>
+<h4 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h4><ul>
+<li>Client-Server架构模式，服务端和客户端之间通过<code>Socket</code>或者<code>RESTful API</code>进行通信</li>
+<li>客户端输入命令，服务端接收处理返回客户端</li>
+</ul>
+<h2 id="容器化和Dockerfile"><a href="#容器化和Dockerfile" class="headerlink" title="容器化和Dockerfile"></a>容器化和Dockerfile</h2><blockquote>
+<p>将应用程序打包成容器，在容器中运行应用程序的过程</p>
+</blockquote>
+<h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><ul>
+<li><code>docker pull dululu/images</code></li>
+<li><code>docker build</code></li>
+<li><code>docker images</code></li>
+<li><code>docker run imagename</code></li>
+</ul>
+<h3 id="DockerDesktop"><a href="#DockerDesktop" class="headerlink" title="DockerDesktop"></a>DockerDesktop</h3><ul>
+<li>封装了常用功能</li>
+<li>镜像</li>
+<li>容器</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-07-09T09:05:15+08:00"
-              content="2024-07-09">
-          07-09
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/07/09/movie/" itemprop="url">
-            <span itemprop="name">电影</span>
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
           </a>
       </div>
-
-      
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/08/05/%E6%97%A5%E8%AE%B0%E2%84%A2August24/" rel="prev" title="日记™August24">
+                  <i class="fa fa-angle-left"></i> 日记™August24
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 

@@ -6,7 +6,7 @@
   <link href="https://dululu.github.io/atom.xml" rel="self"/>
   
   <link href="https://dululu.github.io/"/>
-  <updated>2024-08-06T19:33:19.373Z</updated>
+  <updated>2024-08-06T19:44:17.711Z</updated>
   <id>https://dululu.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://dululu.github.io/2024/08/07/Docker-1/"/>
     <id>https://dululu.github.io/2024/08/07/Docker-1/</id>
     <published>2024-08-07T01:05:15.000Z</published>
-    <updated>2024-08-06T19:33:19.373Z</updated>
+    <updated>2024-08-06T19:44:17.711Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -36,11 +36,26 @@
   </entry>
   
   <entry>
+    <title>Docker</title>
+    <link href="https://dululu.github.io/2024/08/07/Nginx/"/>
+    <id>https://dululu.github.io/2024/08/07/Nginx/</id>
+    <published>2024-08-07T01:05:15.000Z</published>
+    <updated>2024-08-06T19:43:37.239Z</updated>
+    
+    
+    
+    
+    
+    <category term="学习" scheme="https://dululu.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>日记™August24</title>
     <link href="https://dululu.github.io/2024/08/05/%E6%97%A5%E8%AE%B0%E2%84%A2August24/"/>
     <id>https://dululu.github.io/2024/08/05/%E6%97%A5%E8%AE%B0%E2%84%A2August24/</id>
     <published>2024-08-05T01:05:15.000Z</published>
-    <updated>2024-08-06T14:36:14.756Z</updated>
+    <updated>2024-08-10T13:02:50.664Z</updated>
     
     
     <summary type="html">&lt;p&gt;八月离火&lt;/p&gt;</summary>

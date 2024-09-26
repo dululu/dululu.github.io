@@ -6,7 +6,7 @@
   <link href="https://dululu.github.io/atom.xml" rel="self"/>
   
   <link href="https://dululu.github.io/"/>
-  <updated>2024-08-06T19:44:17.711Z</updated>
+  <updated>2024-09-26T16:38:14.471Z</updated>
   <id>https://dululu.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日记™September24</title>
+    <link href="https://dululu.github.io/2024/09/05/%E6%97%A5%E8%AE%B0%E2%84%A2September24/"/>
+    <id>https://dululu.github.io/2024/09/05/%E6%97%A5%E8%AE%B0%E2%84%A2September24/</id>
+    <published>2024-09-05T01:05:15.000Z</published>
+    <updated>2024-09-26T16:38:14.471Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;戒骄戒躁&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="碎碎念" scheme="https://dululu.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker</title>

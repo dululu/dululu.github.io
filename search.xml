@@ -260,10 +260,7 @@
   <entry>
     <title>Links的HTML渲染</title>
     <url>/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/</url>
-    <content><![CDATA[<p>css</p>
-<blockquote>
-<p>为了写出一个看得下去的Links,借助Poe的帮助写了一些css和HTML</p>
-</blockquote>
+    <content><![CDATA[<p>为了写出一个看得下去的Links,借助Poe的帮助写了一些css和HTML<span id="more"></span></p>
 <ul>
 <li>在内联<code>CSS</code>样式中，可能会因为样式定义的格式问题而导致渲染出现异常。如果您的代码在某些情况下由于空格而无法正确渲染，您可以尝试去除代码中的空格，确保各个属性和数值之间没有多余的空格，以确保样式能够正确应用。</li>
 </ul>
@@ -287,7 +284,43 @@
 <h5 id="自己更改css的类"><a href="#自己更改css的类" class="headerlink" title="自己更改css的类"></a>自己更改<code>css</code>的类</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;section-box&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 100%; max-width: 100%; margin: 0 auto; padding: 10px;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>或者</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.firends-box &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  justify-content: space-between;</span><br><span class="line">  align-items: center;</span><br><span class="line">  flex-wrap: wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="html表格"><a href="#html表格" class="headerlink" title="html表格"></a>html表格</h5><!-- New 3xN Table -->
+<p>This is an additional line of text.</p>
+<h2>Favorite Links:</h2>
+<ul>
+  <li><a href="URL1">Link 1</a></li>
+  <li><a href="URL2">Link 2</a></li>
+  <li><a href="URL3">Link 3</a></li>
+  <!-- Add more favorite links as needed -->
+</ul>
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+    <td>Row 1, Cell 3</td>
+  </tr>
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td>Row 2, Cell 2</td>
+    <td>Row 2, Cell 3</td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
 
+<ul>
+<li><code>&lt;p&gt;ee&lt;/p&gt;</code></li>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code></li>
+<li><code>&lt;li&gt;&lt;/li&gt;</code></li>
+<li><code>&lt;tr&gt;&lt;/tr&gt;</code></li>
+<li><code>&lt;table&gt;&lt;/table&gt;</code></li>
+<li><code>&lt;th&gt;</code> <code>&lt;td&gt;</code></li>
+<li><code>&lt;h2&gt;</code></li>
+</ul>
 ]]></content>
       <tags>
         <tag>博客</tag>

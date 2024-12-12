@@ -6,7 +6,7 @@
   <link href="https://dululu.github.io/atom.xml" rel="self"/>
   
   <link href="https://dululu.github.io/"/>
-  <updated>2024-11-08T18:24:59.585Z</updated>
+  <updated>2024-12-12T15:59:10.101Z</updated>
   <id>https://dululu.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Links的HTML渲染</title>
+    <link href="https://dululu.github.io/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/"/>
+    <id>https://dululu.github.io/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/</id>
+    <published>2024-12-07T01:05:15.000Z</published>
+    <updated>2024-12-12T15:59:10.101Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;css&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了写出一个看得下去的Links,借助Poe的帮助写了一些css和HTML&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在内联&lt;code&gt;CSS&lt;/code&gt;样式中，可能会因为样式定义的格式问题而导致渲染出现异常。如</summary>
+        
+      
+    
+    
+    
+    
+    <category term="博客" scheme="https://dululu.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>历史与人民的记忆</title>

@@ -260,7 +260,7 @@
   <entry>
     <title>Links的HTML渲染</title>
     <url>/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/</url>
-    <content><![CDATA[<p>为了写出一个看得下去的Links,借助Poe的帮助写了一些css和HTML<span id="more"></span></p>
+    <content><![CDATA[<p>为了写出一个看得下去的Links,借助<a href="https://poe.com/ChatGPT">Poe</a>的帮助写了一些css和HTML<span id="more"></span></p>
 <ul>
 <li>在内联<code>CSS</code>样式中，可能会因为样式定义的格式问题而导致渲染出现异常。如果您的代码在某些情况下由于空格而无法正确渲染，您可以尝试去除代码中的空格，确保各个属性和数值之间没有多余的空格，以确保样式能够正确应用。</li>
 </ul>
@@ -313,13 +313,13 @@
 </table>
 
 <ul>
-<li><code>&lt;p&gt;ee&lt;/p&gt;</code></li>
-<li><code>&lt;ul&gt;&lt;/ul&gt;</code></li>
-<li><code>&lt;li&gt;&lt;/li&gt;</code></li>
-<li><code>&lt;tr&gt;&lt;/tr&gt;</code></li>
-<li><code>&lt;table&gt;&lt;/table&gt;</code></li>
-<li><code>&lt;th&gt;</code> <code>&lt;td&gt;</code></li>
-<li><code>&lt;h2&gt;</code></li>
+<li><code>&lt;p&gt;ee&lt;/p&gt;</code> 段落元素，用来定义文本的段落</li>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code>：用来创建无序列表，列表项使用 <code>&lt;li&gt;&lt;/li&gt;</code> 标签来表示。</li>
+<li><code>&lt;li&gt;&lt;/li&gt;</code>：用来定义列表中的每一个项目。</li>
+<li><code>&lt;tr&gt;&lt;/tr&gt;</code>：用于创建表格中的行，表格中的每一行使用 <code>&lt;tr&gt;&lt;/tr&gt;</code> 标签来定义。</li>
+<li><code>&lt;table&gt;&lt;/table&gt;</code>：用来创建表格，包含表格的整体结构。</li>
+<li><code>&lt;th&gt; &lt;th&gt;</code>用来定义表格中的表头单元格，<code>&lt;td&gt;</code> 用来定义表格中的数据单元格。</li>
+<li><code>&lt;h2&gt;</code>：是HTML中的标题标签，表示”二级标题”。通常用来表示比一级标题更小的标题级别。</li>
 </ul>
 ]]></content>
       <tags>
@@ -328,9 +328,13 @@
   </entry>
   <entry>
     <title>日记December™24</title>
-    <url>/2024/12/04/2412/</url>
+    <url>/2024/12/12/2412/</url>
     <content><![CDATA[<p>12月有奇迹吗会有的<span id="more"></span></p>
-<h2 id="12月12日"><a href="#12月12日" class="headerlink" title="12月12日"></a>12月12日</h2><p>很抱歉，从12才开始，我也不知道一天天的干了嘛。</p>
+<h2 id="12月12日"><a href="#12月12日" class="headerlink" title="12月12日"></a>12月12日</h2><p>很抱歉，从12才开始，我也不知道一天天的干了嘛。对了最近在听汪峰，希望能找回些能量。其实可以记一记Anki笔记</p>
+<h2 id="12月14日"><a href="#12月14日" class="headerlink" title="12月14日"></a>12月14日</h2><p>还是迷迷糊糊糊的，没有目标和方向，可怕可惜。</p>
+<h2 id="12月17日"><a href="#12月17日" class="headerlink" title="12月17日"></a>12月17日</h2><p>日夜颠倒，睡了一天</p>
+<h2 id="12月18日"><a href="#12月18日" class="headerlink" title="12月18日"></a>12月18日</h2><p>两场面试，美团和edg的</p>
+<h2 id="12月19日"><a href="#12月19日" class="headerlink" title="12月19日"></a>12月19日</h2><p>美团的面试，感觉还行，但是edg的面试感觉不太好，不知道会不会有机会，但是我还是会努力的，加油！今天还是很开心的，因为我看到了一些希望，我会继续努力的，加油，加油！前面是copilot瞎写的哈哈。<br>其实今天去的是集点科技软件销售，在五角场那边，很繁华，很多人，很多车，很多楼，很多商店，希望有好的结果吧。</p>
 ]]></content>
       <tags>
         <tag>碎碎念</tag>

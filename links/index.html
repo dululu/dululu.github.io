@@ -213,25 +213,13 @@
       </div>
     </div>
   </div>
-<!-- 自定义头部 - 添加黑暗模式和语言切换按钮 -->
+<!-- 自定义头部 - 添加黑暗模式切换按钮 -->
 <div class="custom-header-buttons">
   <!-- 黑暗模式切换按钮 -->
   <button class="dark-mode-toggle" id="darkModeToggle" aria-label="切换黑暗模式">
     <i class="fas fa-moon"></i>
     <i class="fas fa-sun"></i>
   </button>
-  
-  <!-- 语言切换按钮 -->
-  <div class="language-switcher" id="languageSwitcher">
-    <button class="language-btn" aria-label="切换语言">
-      <i class="fas fa-globe"></i>
-      <span class="current-lang">中文</span>
-    </button>
-    <div class="language-dropdown">
-      <a href="?lang=zh-CN" class="language-option" data-lang="zh-CN">中文</a>
-      <a href="?lang=en" class="language-option" data-lang="en">English</a>
-    </div>
-  </div>
 </div>
 
 <style>
@@ -289,62 +277,7 @@
   color: #777;
 }
 
-.language-switcher {
-  position: relative;
-}
 
-.language-btn {
-  background: transparent;
-  border: 1px solid var(--btn-default-border-color);
-  border-radius: 20px;
-  padding: 5px 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  font-size: 14px;
-}
-
-.language-btn:hover {
-  border-color: var(--btn-default-hover-border-color);
-  transform: scale(1.05);
-}
-
-.language-btn i {
-  font-size: 14px;
-}
-
-.language-dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: var(--body-bg-color);
-  border: 1px solid var(--btn-default-border-color);
-  border-radius: 8px;
-  padding: 5px 0;
-  min-width: 120px;
-  display: none;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.language-switcher:hover .language-dropdown {
-  display: block;
-}
-
-.language-option {
-  display: block;
-  padding: 8px 15px;
-  color: var(--text-color);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.language-option:hover {
-  background: var(--btn-default-hover-bg);
-  color: var(--btn-default-hover-color);
-}
 
 /* 响应式设计 */
 @media (max-width: 767px) {
@@ -358,10 +291,7 @@
     height: 26px;
   }
   
-  .language-btn {
-    padding: 4px 12px;
-    font-size: 13px;
-  }
+
 }
 </style>
 
@@ -388,35 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 发送事件通知其他组件
     const event = new CustomEvent('darkModeChanged', { detail: { isDark: isNowDark } });
     document.dispatchEvent(event);
-  });
-  
-  // 语言切换功能
-  const languageOptions = document.querySelectorAll('.language-option');
-  
-  languageOptions.forEach(option => {
-    option.addEventListener('click', function(e) {
-      e.preventDefault();
-      const lang = this.getAttribute('data-lang');
-      
-      // 保存语言选择到本地存储
-      localStorage.setItem('preferredLanguage', lang);
-      
-      // 更新当前语言显示
-      const currentLangSpan = document.querySelector('.current-lang');
-      currentLangSpan.textContent = lang === 'zh-CN' ? '中文' : 'English';
-      
-      // 重新加载页面应用新语言
-      // 注意：这里需要Hexo的多语言支持配置
-      window.location.href = window.location.pathname + '?lang=' + lang;
-    });
-  });
-  
-  // 检查本地存储的语言设置
-  const preferredLanguage = localStorage.getItem('preferredLanguage');
-  if (preferredLanguage) {
-    const currentLangSpan = document.querySelector('.current-lang');
-    currentLangSpan.textContent = preferredLanguage === 'zh-CN' ? '中文' : 'English';
-  }
+
 });
 </script>
 </header>

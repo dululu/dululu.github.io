@@ -184,8 +184,8 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: zpix, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 1em;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1.05em;
   line-height: 2;
   min-height: 100%;
   position: relative;
@@ -197,28 +197,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: zpix, zpix, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, "Source Han Serif SC", "Source Han Serif CN", "Songti SC", SimSun, serif, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 0.975em;
 }
 h2 {
-  font-size: 1.375em;
+  font-size: 0.85em;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 0.725em;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 0.6em;
 }
 h5 {
-  font-size: 1em;
+  font-size: 0.475em;
 }
 h6 {
-  font-size: 0.875em;
+  font-size: 0.35em;
 }
 p {
   margin: 0 0 20px;
@@ -518,7 +518,7 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: monospace, consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace, consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
 }
 code {
   border-radius: 3px;
@@ -1092,8 +1092,8 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Noto Serif SC, zpix, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 1.375em;
+  font-family: Noto Serif SC, "Source Han Serif SC", "Source Han Serif CN", "Songti SC", SimSun, serif, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1.2em;
   font-weight: normal;
   line-height: 1.5;
   margin: 0;
@@ -1233,7 +1233,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #0e60a8;
+    background: #ff6fe8;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1633,7 +1633,7 @@ pre code {
   width: 100%;
 }
 .with-love {
-  color: #f00;
+  color: #ff6b6b;
   display: inline-block;
   margin: 0 5px;
   animation: icon-animate 1.33s ease-in-out infinite;
@@ -1824,7 +1824,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Noto Serif SC, zpix, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, "Source Han Serif SC", "Source Han Serif CN", "Songti SC", SimSun, serif, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2010,7 +2010,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Noto Serif SC, zpix, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, "Source Han Serif SC", "Source Han Serif CN", "Songti SC", SimSun, serif, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2769,4 +2769,275 @@ header.header {
   .sidebar {
     display: none;
   }
+}
+body {
+  background-color: #fff;
+  color: #34495e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ecf0f1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.menu .menu-item a {
+  color: #34495e;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.menu .menu-item a:hover {
+  color: #3498db;
+  background-color: rgba(52,152,219,0.1);
+}
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #ecf0f1;
+}
+.sidebar .sidebar-inner {
+  padding: 20px;
+}
+.site-author-image {
+  border: 2px solid #ecf0f1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.site-author-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.post-block {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #ecf0f1;
+  transition: all 0.2s ease;
+}
+.post-block:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.posts-expand .post-title {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 12px;
+  border-bottom: none;
+}
+.posts-expand .post-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.posts-expand .post-title a:hover {
+  color: #3498db;
+}
+.post-meta {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-bottom: 16px;
+}
+.post-meta .post-time,
+.post-meta .post-category,
+.post-meta .post-comments-count {
+  margin-right: 12px;
+}
+.post-meta .post-time a,
+.post-meta .post-category a,
+.post-meta .post-comments-count a {
+  color: #7f8c8d;
+}
+.post-meta .post-time a:hover,
+.post-meta .post-category a:hover,
+.post-meta .post-comments-count a:hover {
+  color: #3498db;
+}
+.post-body {
+  font-size: 1em;
+  line-height: 1.7;
+}
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+.post-body h1 {
+  font-size: 1.5em;
+}
+.post-body h2 {
+  font-size: 1.3em;
+}
+.post-body h3 {
+  font-size: 1.2em;
+}
+.post-body p {
+  margin-bottom: 1.2em;
+}
+.post-body a {
+  color: #3498db;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(52,152,219,0.2);
+  transition: all 0.2s ease;
+}
+.post-body a:hover {
+  color: #2980b9;
+  border-bottom-color: #2980b9;
+}
+.post-body code {
+  background-color: rgba(236,240,241,0.5);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.post-body pre {
+  background-color: #f8f9fa;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+}
+.post-body pre code {
+  background-color: transparent;
+  padding: 0;
+}
+.post-body blockquote {
+  border-left: 4px solid #3498db;
+  background-color: rgba(52,152,219,0.05);
+  padding: 12px 20px;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
+.post-body blockquote p {
+  margin-bottom: 0;
+  color: #34495e;
+}
+.post-body ul,
+.post-body ol {
+  margin-bottom: 1.2em;
+  padding-left: 1.5em;
+}
+.post-body li {
+  margin-bottom: 0.5em;
+}
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.2em;
+}
+.post-body table th,
+.post-body table td {
+  padding: 8px 12px;
+  border: 1px solid #ecf0f1;
+}
+.post-body table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+.pagination .page-number,
+.pagination .extend {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: 1px solid #ecf0f1;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.pagination .page-number:hover,
+.pagination .extend:hover {
+  background-color: rgba(52,152,219,0.1);
+  border-color: #3498db;
+}
+.pagination .page-number.current,
+.pagination .extend.current {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #3498db;
+}
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #ecf0f1;
+  padding: 24px 0;
+  margin-top: 40px;
+}
+.footer .footer-inner {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+.tag-cloud a {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #ecf0f1;
+  border-radius: 16px;
+  color: #34495e;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+.tag-cloud a:hover {
+  background-color: rgba(52,152,219,0.1);
+  border-color: #3498db;
+  color: #3498db;
+  transform: translateY(-1px);
+}
+.highlight {
+  border-radius: 6px;
+  margin: 1.5em 0;
+}
+.highlight .gutter {
+  background-color: #f8f9fa;
+  border-right: 1px solid #ecf0f1;
+}
+.highlight .code pre {
+  margin: 0;
+  padding: 16px;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  .post-block {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .posts-expand .post-title {
+    font-size: 1.3em;
+  }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #ecf0f1;
+  }
+}
+.text-muted {
+  color: #7f8c8d;
+}
+.text-primary {
+  color: #3498db;
+}
+.bg-light {
+  background-color: #f8f9fa;
+}
+.rounded {
+  border-radius: 6px;
+}
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.shadow-md {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }

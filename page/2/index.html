@@ -12,13 +12,13 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=zpix:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7Cmonospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300italic,400,400italic,700,700italic%7C-apple-system:300,300italic,400,400italic,700,700italic%7CBlinkMacSystemFont:300,300italic,400,400italic,700,700italic%7C"Segoe+UI":300,300italic,400,400italic,700,700italic%7CRoboto:300,300italic,400,400italic,700,700italic%7C"Helvetica+Neue":300,300italic,400,400italic,700,700italic%7CArial:300,300italic,400,400italic,700,700italic%7Csans-serif:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7C"Source+Han+Serif+SC":300,300italic,400,400italic,700,700italic%7C"Source+Han+Serif+CN":300,300italic,400,400italic,700,700italic%7C"Songti+SC":300,300italic,400,400italic,700,700italic%7CSimSun:300,300italic,400,400italic,700,700italic%7Cserif:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":250,"width_dual_column":220,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":250,"width_dual_column":220,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#5B7A8C","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="xh&#39;blog">
 <meta property="og:type" content="website">
@@ -47,7 +47,87 @@
 
 
 
+<!-- 简洁清晰主题 - 头部自定义 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#FFFFFF">
 
+<!-- 字体 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- 图标 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- 自定义样式 -->
+<style>
+  /* 基础字体优化 */
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* 平滑滚动 */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* 链接样式优化 */
+  a {
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  /* 代码块优化 */
+  pre, code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  }
+  
+  /* 图片优化 */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 容器优化 */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+  }
+</style>
+
+<!-- 网站图标 -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- SEO优化 -->
+<meta name="description" content="xh'blog">
+<meta name="keywords" content="">
+<meta property="og:title" content="Always on the way">
+<meta property="og:description" content="xh'blog">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dululu.github.io">
+<meta property="og:image" content="https://dululu.github.io/images/og-image.jpg">
+
+<!-- 禁止页面缩放（移动端） -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- 禁止百度转码 -->
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<!-- 禁止自动识别电话号码 -->
+<meta name="format-detection" content="telephone=no">
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -152,13 +232,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -190,6 +270,96 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dululu.github.io/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/21.jpg">
+      <meta itemprop="name" content="xh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Always on the way">
+      <meta itemprop="description" content="xh'blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Always on the way">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/" class="post-title-link" itemprop="url">Links的HTML渲染</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-12-07 09:05:15" itemprop="dateCreated datePublished" datetime="2024-12-07T09:05:15+08:00">2024-12-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-12-18 03:00:10" itemprop="dateModified" datetime="2024-12-18T03:00:10+08:00">2024-12-18</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>858</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>为了写出一个看得下去的Links,借助<a target="_blank" rel="noopener" href="https://poe.com/ChatGPT">Poe</a>的帮助写了一些css和HTML
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/12/07/%E5%9C%A8MarkDown%E4%B8%AD%E6%B8%B2%E6%9F%93HTML/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -995,101 +1165,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dululu.github.io/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/21.jpg">
-      <meta itemprop="name" content="xh">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Always on the way">
-      <meta itemprop="description" content="xh'blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Always on the way">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/" class="post-title-link" itemprop="url">顷刻炼化</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-05 09:05:15" itemprop="dateCreated datePublished" datetime="2024-06-05T09:05:15+08:00">2024-06-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-07 03:34:06" itemprop="dateModified" datetime="2024-08-07T03:34:06+08:00">2024-08-07</time>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>158</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <blockquote>
-<p>古月方源最近很火啊，可惜我已经对这种爽文套路男主没有读下去的动力，也不是讨厌，可能真的·老·了吧😥</p>
-</blockquote>
-<p>落魄谷中寒风吹，春秋蝉鸣少年归。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/06/05/%E8%9B%8A%E7%9C%9F%E4%BA%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -1117,7 +1194,173 @@
     </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div><!-- 简洁清晰主题 - 页脚 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <div class="footer-section">
+        <p class="footer-copyright">
+          &copy; 2021 - Invalid date xh
+          
+            <span class="footer-powered">
+              | Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>
+              & <a href="https://theme-next.js.org/" target="_blank" rel="noopener">NexT</a>
+            </span>
+          
+        </p>
+        
+        
+          <p class="footer-icon">
+            <i class="fa fa-heart animated" 
+               style="color: #ff6b6b;"></i>
+          </p>
+        
+        
+        
+      </div>
+      
+      <div class="footer-links">
+        
+          <div class="social-links">
+            
+              
+              
+              
+              <a href="/atom.xml" class="social-link" target="_blank" rel="noopener" title="RSS">
+                <i class="fa fa-rss"></i>
+              </a>
+            
+          </div>
+        
+      </div>
+    </div>
   </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #F8F9FA;
+    border-top: 1px solid #ECF0F1;
+    padding: 32px 0;
+    margin-top: 64px;
+    color: #7F8C8D;
+    font-size: 0.9em;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-copyright {
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+  }
+  
+  .footer-powered {
+    color: #95A5A6;
+  }
+  
+  .footer-powered a {
+    color: #3498DB;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .footer-powered a:hover {
+    color: #2980B9;
+    border-bottom-color: #2980B9;
+  }
+  
+  .footer-icon {
+    margin: 12px 0;
+    font-size: 1.2em;
+  }
+  
+  .footer-beian {
+    margin-top: 12px;
+  }
+  
+  .footer-beian a {
+    color: #7F8C8D;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-beian a:hover {
+    color: #3498DB;
+  }
+  
+  .footer-links {
+    margin-top: 8px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    border: 1px solid #ECF0F1;
+    border-radius: 50%;
+    color: #7F8C8D;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+  }
+  
+  .social-link:hover {
+    background-color: #3498DB;
+    border-color: #3498DB;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 24px 0;
+      margin-top: 48px;
+    }
+    
+    .footer-inner {
+      padding: 0 16px;
+    }
+    
+    .footer-content {
+      gap: 16px;
+    }
+    
+    .social-links {
+      gap: 12px;
+    }
+    
+    .social-link {
+      width: 32px;
+      height: 32px;
+      font-size: 1em;
+    }
+  }
+</style>
 
     </div>
   </footer>
@@ -1159,6 +1402,245 @@
 
 <script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"dululu/dululu.github.io","issue_term":"pathname","theme":"github-light"}</script>
 <script src="/js/third-party/comments/utterances.js"></script>
+<!-- 简洁清晰主题 - 页面底部脚本 -->
+<script>
+  // 页面加载完成后的效果
+  document.addEventListener('DOMContentLoaded', function() {
+    // 平滑滚动到锚点
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // 代码块复制功能
+    document.querySelectorAll('pre').forEach(pre => {
+      const code = pre.querySelector('code');
+      if (!code) return;
+      
+      const button = document.createElement('button');
+      button.className = 'copy-code-btn';
+      button.innerHTML = '<i class="fas fa-copy"></i>';
+      button.title = '复制代码';
+      
+      button.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(code.textContent);
+          button.innerHTML = '<i class="fas fa-check"></i>';
+          button.style.color = '#27ae60';
+          
+          setTimeout(() => {
+            button.innerHTML = '<i class="fas fa-copy"></i>';
+            button.style.color = '';
+          }, 2000);
+        } catch (err) {
+          console.error('复制失败:', err);
+          button.innerHTML = '<i class="fas fa-times"></i>';
+          button.style.color = '#e74c3c';
+          
+          setTimeout(() => {
+            button.innerHTML = '<i class="fas fa-copy"></i>';
+            button.style.color = '';
+          }, 2000);
+        }
+      });
+      
+      pre.style.position = 'relative';
+      button.style.position = 'absolute';
+      button.style.top = '8px';
+      button.style.right = '8px';
+      button.style.background = 'rgba(255, 255, 255, 0.9)';
+      button.style.border = '1px solid #ECF0F1';
+      button.style.borderRadius = '4px';
+      button.style.padding = '4px 8px';
+      button.style.fontSize = '12px';
+      button.style.cursor = 'pointer';
+      button.style.color = '#7F8C8D';
+      button.style.transition = 'all 0.2s ease';
+      button.style.zIndex = '1';
+      
+      button.addEventListener('mouseenter', () => {
+        button.style.background = '#3498DB';
+        button.style.borderColor = '#3498DB';
+        button.style.color = '#FFFFFF';
+      });
+      
+      button.addEventListener('mouseleave', () => {
+        if (!button.innerHTML.includes('check') && !button.innerHTML.includes('times')) {
+          button.style.background = 'rgba(255, 255, 255, 0.9)';
+          button.style.borderColor = '#ECF0F1';
+          button.style.color = '#7F8C8D';
+        }
+      });
+      
+      pre.appendChild(button);
+    });
+    
+    // 图片懒加载
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.add('loaded');
+          observer.unobserve(img);
+        }
+      });
+    });
+    
+    images.forEach(img => imageObserver.observe(img));
+    
+    // 回到顶部按钮
+    const backToTop = document.createElement('button');
+    backToTop.id = 'back-to-top';
+    backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    backToTop.title = '回到顶部';
+    
+    backToTop.style.position = 'fixed';
+    backToTop.style.bottom = '30px';
+    backToTop.style.right = '30px';
+    backToTop.style.width = '44px';
+    backToTop.style.height = '44px';
+    backToTop.style.background = '#3498DB';
+    backToTop.style.color = '#FFFFFF';
+    backToTop.style.border = 'none';
+    backToTop.style.borderRadius = '50%';
+    backToTop.style.fontSize = '18px';
+    backToTop.style.cursor = 'pointer';
+    backToTop.style.boxShadow = '0 4px 12px rgba(52, 152, 219, 0.3)';
+    backToTop.style.transition = 'all 0.3s ease';
+    backToTop.style.opacity = '0';
+    backToTop.style.visibility = 'hidden';
+    backToTop.style.zIndex = '1000';
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    backToTop.addEventListener('mouseenter', () => {
+      backToTop.style.transform = 'translateY(-2px)';
+      backToTop.style.boxShadow = '0 6px 16px rgba(52, 152, 219, 0.4)';
+    });
+    
+    backToTop.addEventListener('mouseleave', () => {
+      backToTop.style.transform = 'translateY(0)';
+      backToTop.style.boxShadow = '0 4px 12px rgba(52, 152, 219, 0.3)';
+    });
+    
+    document.body.appendChild(backToTop);
+    
+    // 显示/隐藏回到顶部按钮
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.style.opacity = '1';
+        backToTop.style.visibility = 'visible';
+      } else {
+        backToTop.style.opacity = '0';
+        backToTop.style.visibility = 'hidden';
+      }
+    });
+    
+    // 文章目录自动高亮
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = Array.from(tocLinks).map(link => {
+      const href = link.getAttribute('href');
+      return document.querySelector(href);
+    }).filter(Boolean);
+    
+    if (sections.length > 0) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = '#' + entry.target.id;
+            tocLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, {
+        rootMargin: '-20% 0px -80% 0px'
+      });
+      
+      sections.forEach(section => observer.observe(section));
+    }
+  });
+  
+  // 页面加载进度条
+  window.addEventListener('load', () => {
+    const progressBar = document.createElement('div');
+    progressBar.id = 'page-load-progress';
+    progressBar.style.position = 'fixed';
+    progressBar.style.top = '0';
+    progressBar.style.left = '0';
+    progressBar.style.width = '0%';
+    progressBar.style.height = '2px';
+    progressBar.style.background = '#3498DB';
+    progressBar.style.transition = 'width 0.3s ease';
+    progressBar.style.zIndex = '9999';
+    
+    document.body.appendChild(progressBar);
+    
+    setTimeout(() => {
+      progressBar.style.width = '100%';
+      setTimeout(() => {
+        progressBar.style.opacity = '0';
+        setTimeout(() => {
+          progressBar.remove();
+        }, 300);
+      }, 300);
+    }, 100);
+  });
+</script>
 
+<style>
+  /* 目录链接激活状态 */
+  .toc-link.active {
+    color: #3498DB !important;
+    font-weight: 600;
+  }
+  
+  /* 图片加载动画 */
+  img[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  img.loaded {
+    opacity: 1;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+    
+    .copy-code-btn {
+      padding: 3px 6px !important;
+      font-size: 11px !important;
+    }
+  }
+</style>
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.2.0">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/22.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/22.png">
@@ -18,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":250,"width_dual_column":220,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#5B7A8C","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":250,"width_dual_column":220,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#5B7A8C","save":"auto"},"mediumzoom":"flase","lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="古月方源最近很火啊，可惜我已经对这种爽文套路男主没有读下去的动力，也不是讨厌，可能真的·老·了吧😥  落魄谷中寒风吹，春秋蝉鸣少年归。">
 <meta property="og:type" content="article">
@@ -204,7 +205,212 @@
       </div>
     </div>
   </div>
+<!-- 自定义头部 - 添加黑暗模式和语言切换按钮 -->
+<div class="custom-header-buttons">
+  <!-- 黑暗模式切换按钮 -->
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="切换黑暗模式">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+  </button>
+  
+  <!-- 语言切换按钮 -->
+  <div class="language-switcher" id="languageSwitcher">
+    <button class="language-btn" aria-label="切换语言">
+      <i class="fas fa-globe"></i>
+      <span class="current-lang">中文</span>
+    </button>
+    <div class="language-dropdown">
+      <a href="?lang=zh-CN" class="language-option" data-lang="zh-CN">中文</a>
+      <a href="?lang=en" class="language-option" data-lang="en">English</a>
+    </div>
+  </div>
+</div>
 
+<style>
+.custom-header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.dark-mode-toggle {
+  background: transparent;
+  border: 1px solid var(--btn-default-border-color);
+  border-radius: 20px;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.dark-mode-toggle:hover {
+  border-color: var(--btn-default-hover-border-color);
+  transform: scale(1.05);
+}
+
+.dark-mode-toggle i {
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle .fa-moon {
+  color: #666;
+}
+
+.dark-mode-toggle .fa-sun {
+  color: #f39c12;
+}
+
+/* 黑暗模式下的样式 */
+.dark-mode .dark-mode-toggle {
+  border-color: #555;
+}
+
+.dark-mode .dark-mode-toggle .fa-moon {
+  color: #f1c40f;
+}
+
+.dark-mode .dark-mode-toggle .fa-sun {
+  color: #777;
+}
+
+.language-switcher {
+  position: relative;
+}
+
+.language-btn {
+  background: transparent;
+  border: 1px solid var(--btn-default-border-color);
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.language-btn:hover {
+  border-color: var(--btn-default-hover-border-color);
+  transform: scale(1.05);
+}
+
+.language-btn i {
+  font-size: 14px;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--body-bg-color);
+  border: 1px solid var(--btn-default-border-color);
+  border-radius: 8px;
+  padding: 5px 0;
+  min-width: 120px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.language-switcher:hover .language-dropdown {
+  display: block;
+}
+
+.language-option {
+  display: block;
+  padding: 8px 15px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.language-option:hover {
+  background: var(--btn-default-hover-bg);
+  color: var(--btn-default-hover-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 767px) {
+  .custom-buttons {
+    padding-right: 10px;
+    gap: 8px;
+  }
+  
+  .dark-mode-toggle {
+    width: 50px;
+    height: 26px;
+  }
+  
+  .language-btn {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 黑暗模式切换功能
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+  
+  // 检查本地存储的黑暗模式设置
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  
+  // 应用初始模式
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+  }
+  
+  // 切换黑暗模式
+  darkModeToggle.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    const isNowDark = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isNowDark);
+    
+    // 发送事件通知其他组件
+    const event = new CustomEvent('darkModeChanged', { detail: { isDark: isNowDark } });
+    document.dispatchEvent(event);
+  });
+  
+  // 语言切换功能
+  const languageOptions = document.querySelectorAll('.language-option');
+  
+  languageOptions.forEach(option => {
+    option.addEventListener('click', function(e) {
+      e.preventDefault();
+      const lang = this.getAttribute('data-lang');
+      
+      // 保存语言选择到本地存储
+      localStorage.setItem('preferredLanguage', lang);
+      
+      // 更新当前语言显示
+      const currentLangSpan = document.querySelector('.current-lang');
+      currentLangSpan.textContent = lang === 'zh-CN' ? '中文' : 'English';
+      
+      // 重新加载页面应用新语言
+      // 注意：这里需要Hexo的多语言支持配置
+      window.location.href = window.location.pathname + '?lang=' + lang;
+    });
+  });
+  
+  // 检查本地存储的语言设置
+  const preferredLanguage = localStorage.getItem('preferredLanguage');
+  if (preferredLanguage) {
+    const currentLangSpan = document.querySelector('.current-lang');
+    currentLangSpan.textContent = preferredLanguage === 'zh-CN' ? '中文' : 'English';
+  }
+});
+</script>
 </header>
         
   

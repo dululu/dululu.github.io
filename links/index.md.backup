@@ -1,0 +1,214 @@
+---
+title: Friend Links
+date: 2024-12-12 09:05:15
+tags:
+- links
+---
+<!-- ## *Cyberfriend*
+> 在错杂的时间和空间，浏览相同的文字与图像，了解彼此的过去和未来，赛博朋友，你好✍️。
+> 
+>~~此页面就当做收藏夹~~
+### *person*
+- [驰雨Chiyuru | THU数学家](https://chiyuru.github.io/)
+- [polebug | Web3 UP主](https://polebug.github.io/)
+- [laixintao | 抓蛇大佬](https://www.kawabangga.com/how-to-learn-python)
+- [origakid | 博客有意思](https://origakid.top/)
+- [ayu | OIer ](https://ayu.land/about)
+- [Green Dolphin Dance | 内容丰富](https://greendolphindance.com/)
+- [Frost Ming | Python学习](https://frostming.com/)
+---
+
+### *org*
+- [oi-wiki | 随便看看吧](https://oi-wiki.org/)
+- [spiderbox | 爬虫工具](https://spiderbox.cn/)
+- [Hexo-NexT | 博客模板](https://hexo-next.readthedocs.io/zh-cn/latest/)
+- [cf | 赛博佛祖，看看博客](https://www.cloudflare.com/zh-cn/learning/)
+- [MD | 常用常忘](https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88)
+- [Django | 最后一舞 ](https://docs.djangoproject.com/zh-hans/5.0/intro/tutorial01/) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friend Links</title>
+<style>
+  .firends-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .firends-item {
+    width: 21%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 6px;
+  }
+  .firends-item img {
+    width: 100%;
+    height: 150px; /* 设置图片高度为150px */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .firends-item:hover img {
+    transform: scale(1.1);
+  }
+  .firends-item a {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="section-box">
+  <section class="friends-section bg-color slide-down-in">
+    <div class="firends-box">
+      <div class="firends-item">
+        <a href="https://www.zhihu.com/people/L.M.Sherlock" target="_blank">
+          <img src="https://pica.zhimg.com/v2-41f893b0cd84fb6a8c8f6d1bd29c9554_xll.jpg?source=32738c0c">
+          <div>
+            <div>
+              Thoughts Memo
+            </div>
+            <div>    
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="firends-item">
+        <a href="https://chiyuru.github.io/" target="_blank">
+          <img src="https://chiyuru.github.io/images/avatar.jpg">
+          <div>
+            <div>
+              驰雨Chiyuru
+            </div>
+            <div>    
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="firends-item">
+        <a href="https://kawabangga.com/how-to-learn-python/" target="_blank">
+          <img src="https://www.kawabangga.com/wp-content/uploads/2024/05/photo-of-me-2024-1536x639.jpg">
+          <div>
+            <div>
+              卡瓦邦噶！
+            </div>
+            <div>    
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="firends-item">
+        <a href="https://frostming.com/" target="_blank">
+          <img src="https://github.com/frostming.png">
+          <div>
+            <div>
+              Frost Ming
+            </div>
+            <div>    
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="firends-item">
+        <a href="https://polebug.github.io/" target="_blank">
+          <img src="https://polebug.github.io/images/avatar.jpg">
+          <div>
+            <div>
+              polebug
+            </div>
+            <div>    
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="firends-item">
+        <a href="https://greendolphindance.com/" target="_blank">
+          <img src="https://greendolphindance.github.io/picx-images-hosting/10961730655413_.pic.58hdovd5f3.jpg">
+          <div>
+            <div>
+              greendolphindance
+            </div>
+            <div>    
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="firends-item">
+        <a href="http://www.yaobella.com/index.php" target="_blank">
+          <img src="https://github.com/user-attachments/assets/1a234998-61b5-4bae-8b05-007bef849cd9">
+          <div>
+            <div>
+              bella
+            </div>
+            <div>    
+            </div>    
+          </div>
+        </a>
+      </div>
+            <div class="firends-item">
+        <a href="https://csacademy.com/app/graph_editor/" target="_blank">
+          <img src="https://github.com/user-attachments/assets/14d44a98-bcca-4b33-b2a4-742b03cd3cc6">
+          <div>
+            <div>
+              csacademy
+            </div>
+            <div>    
+            </div>    
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- New 3xN Table -->
+<h2>Favorite Links:</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://hexo-next.readthedocs.io/zh-cn/latest/">hexo-next</a></li>
+    </td>
+    <td>hexo-next博客文档</td>
+  </tr>
+  <tr>
+    <td>
+        <a href="https://origakid.top/">origakid</a></li>
+    </td>
+    <td>有意思</td>
+  </tr>
+    <tr>
+    <td>
+        <a href="https://ayu.land/about">ayu</a></li>
+    </td>
+    <td>ayu</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>
+        <a href="https://docs.djangoproject.com/zh-hans/5.0/intro/tutorial01/">Django</a></li>
+    </td>
+    <td>tutorial</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>
+        <a href="https://www.cloudflare.com/zh-cn/learning/">cloudflare</a></li>
+    </td>
+    <td>cf</td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
+  </section>
+</div>
+</body>
+</html>

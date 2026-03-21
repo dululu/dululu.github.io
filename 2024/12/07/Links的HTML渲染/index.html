@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dululu.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="为了写出一个看得下去的Links,借助Poe的帮助写了一些css和HTML  在内联CSS样式中，可能会因为样式定义的格式问题而导致渲染出现异常。如果您的代码在某些情况下由于空格而无法正确渲染，您可以尝试去除代码中的空格，确保各个属性和数值之间没有多余的空格，以确保样式能够正确应用。  基本格式Friend Links    &#x2F;* css代码 *&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Links的HTML渲染">
+<meta property="og:url" content="https://dululu.github.io/2024/12/07/Links%E7%9A%84HTML%E6%B8%B2%E6%9F%93/index.html">
+<meta property="og:site_name" content="Always on the way">
+<meta property="og:description" content="为了写出一个看得下去的Links,借助Poe的帮助写了一些css和HTML  在内联CSS样式中，可能会因为样式定义的格式问题而导致渲染出现异常。如果您的代码在某些情况下由于空格而无法正确渲染，您可以尝试去除代码中的空格，确保各个属性和数值之间没有多余的空格，以确保样式能够正确应用。  基本格式Friend Links    &#x2F;* css代码 *&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-12-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-21T11:20:09.985Z">
+<meta property="article:author" content="xh">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://dululu.github.io/2024/12/07/Links%E7%9A%84HTML%E6%B8%B2%E6%9F%93/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dululu.github.io/2024/12/07/Links%E7%9A%84HTML%E6%B8%B2%E6%9F%93/","path":"2024/12/07/Links的HTML渲染/","title":"Links的HTML渲染"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Links的HTML渲染 | Always on the way</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Always on the way" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Always on the way</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>links</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">基本格式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%EF%BC%9A%E5%8C%85%E5%90%AB%E4%BA%86%E6%96%87%E6%A1%A3%E7%9A%84%E5%85%83%E4%BF%A1%E6%81%AF%E5%92%8C%E5%BC%95%E7%94%A8%EF%BC%8C%E4%B8%8D%E4%BC%9A%E7%9B%B4%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%8A%E3%80%82"><span class="nav-number">1.0.1.</span> <span class="nav-text">：包含了文档的元信息和引用，不会直接显示在页面上。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%EF%BC%9A%E5%9C%A8%E8%BF%99%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B8%AD%E5%8C%85%E5%90%AB%E4%BA%86CSS%E6%A0%B7%E5%BC%8F%E3%80%82"><span class="nav-number">1.0.2.</span> <span class="nav-text">&lt;&#x2F;code&gt;：在这个标签中包含了CSS样式。&lt;&#x2F;h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CSS&lt;&#x2F;code&gt;样式用于控制页面元素的外观和布局。&lt;&#x2F;li&gt;
+&lt;li&gt;在这段代码中，&lt;code&gt;CSS&lt;&#x2F;code&gt;样式定义了一些属性，如布局、尺寸、边距、圆角、动画效果等，用于美化和布局友情链接展示的元素。&lt;&#x2F;li&gt;
+&lt;li&gt;这段样式会应用到页面中具有对应类名的元素上，例如&lt;code&gt;.firends-box&lt;&#x2F;code&gt;、&lt;code&gt;.firends-item&lt;&#x2F;code&gt;、&lt;code&gt;.firends-item img&lt;&#x2F;code&gt;等。&lt;&#x2F;li&gt;
+&lt;li&gt;通过&lt;code&gt;CSS&lt;&#x2F;code&gt;样式，可以实现友情链接的排列、样式、交互效果等。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id&#x3D;&quot;&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;headerlink&quot; title&#x3D;&quot;&lt;div class&#x3D;&quot;firends-item&quot;&gt;&quot;&gt;&lt;&#x2F;a&gt;&lt;code&gt;&lt;div class&#x3D;&quot;firends-item&quot;&gt;&lt;&#x2F;code&gt;&lt;&#x2F;h5&gt;&lt;ul&gt;
+&lt;li&gt;类用于指定该&lt;code&gt;&lt;div&gt;&lt;&#x2F;code&gt;元素在页面中的某个特定样式或布局&lt;&#x2F;li&gt;
+&lt;li&gt;在 &lt;code&gt;HTML&lt;&#x2F;code&gt; 中，&lt;code&gt;&lt;section&gt;&lt;&#x2F;code&gt; 通常用于表示文档或应用程序中的一个独立的部分或区块，用于组织内容&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id&#x3D;&quot;自己更改css的类&quot;&gt;&lt;a href&#x3D;&quot;#自己更改css的类&quot; class&#x3D;&quot;headerlink&quot; title&#x3D;&quot;自己更改css的类&quot;&gt;&lt;&#x2F;a&gt;自己更改&lt;code&gt;css&lt;&#x2F;code&gt;的类&lt;&#x2F;h5&gt;&lt;figure class&#x3D;&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class&#x3D;&quot;code&quot;&gt;&lt;pre&gt;&lt;span class&#x3D;&quot;line&quot;&gt;&lt;span class&#x3D;&quot;tag&quot;&gt;&lt;&lt;span class&#x3D;&quot;name&quot;&gt;div&lt;&#x2F;span&gt; &lt;span class&#x3D;&quot;attr&quot;&gt;class&lt;&#x2F;span&gt;&#x3D;&lt;span class&#x3D;&quot;string&quot;&gt;&quot;section-box&quot;&lt;&#x2F;span&gt; &lt;span class&#x3D;&quot;attr&quot;&gt;style&lt;&#x2F;span&gt;&#x3D;&lt;span class&#x3D;&quot;string&quot;&gt;&quot;width: 100%; max-width: 100%; margin: 0 auto; padding: 10px;&quot;&lt;&#x2F;span&gt;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;br&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;table&gt;&lt;&#x2F;figure&gt;
+&lt;p&gt;或者&lt;&#x2F;p&gt;
+&lt;figure class&#x3D;&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class&#x3D;&quot;code&quot;&gt;&lt;pre&gt;&lt;span class&#x3D;&quot;line&quot;&gt;.firends-box {&lt;&#x2F;span&gt;&lt;br&gt;&lt;span class&#x3D;&quot;line&quot;&gt;  display: flex;&lt;&#x2F;span&gt;&lt;br&gt;&lt;span class&#x3D;&quot;line&quot;&gt;  justify-content: space-between;&lt;&#x2F;span&gt;&lt;br&gt;&lt;span class&#x3D;&quot;line&quot;&gt;  align-items: center;&lt;&#x2F;span&gt;&lt;br&gt;&lt;span class&#x3D;&quot;line&quot;&gt;  flex-wrap: wrap;&lt;&#x2F;span&gt;&lt;br&gt;&lt;span class&#x3D;&quot;line&quot;&gt;}&lt;&#x2F;span&gt;&lt;br&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;table&gt;&lt;&#x2F;figure&gt;
+&lt;h5 id&#x3D;&quot;html表格&quot;&gt;&lt;a href&#x3D;&quot;#html表格&quot; class&#x3D;&quot;headerlink&quot; title&#x3D;&quot;html表格&quot;&gt;&lt;&#x2F;a&gt;html表格&lt;&#x2F;h5&gt;&lt;!-- New 3xN Table --&gt;
+&lt;p&gt;This is an additional line of text.&lt;&#x2F;p&gt;
+&lt;h2&gt;Favorite Links:&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href&#x3D;&quot;URL1&quot;&gt;Link 1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href&#x3D;&quot;URL2&quot;&gt;Link 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href&#x3D;&quot;URL3&quot;&gt;Link 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;!-- Add more favorite links as needed --&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;&#x2F;th&gt;
+    &lt;th&gt;Header 2&lt;&#x2F;th&gt;
+    &lt;th&gt;Header 3&lt;&#x2F;th&gt;
+  &lt;&#x2F;tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;&#x2F;td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;&#x2F;td&gt;
+    &lt;td&gt;Row 1, Cell 3&lt;&#x2F;td&gt;
+  &lt;&#x2F;tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 2, Cell 1&lt;&#x2F;td&gt;
+    &lt;td&gt;Row 2, Cell 2&lt;&#x2F;td&gt;
+    &lt;td&gt;Row 2, Cell 3&lt;&#x2F;td&gt;
+  &lt;&#x2F;tr&gt;
+  &lt;!-- Add more rows as needed --&gt;
+&lt;&#x2F;table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&lt;p&gt;ee&lt;&#x2F;p&gt;&lt;&#x2F;code&gt; 段落元素，用来定义文本的段落&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&lt;ul&gt;&lt;&#x2F;ul&gt;&lt;&#x2F;code&gt;：用来创建无序列表，列表项使用 &lt;code&gt;&lt;li&gt;&lt;&#x2F;li&gt;&lt;&#x2F;code&gt; 标签来表示。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&lt;li&gt;&lt;&#x2F;li&gt;&lt;&#x2F;code&gt;：用来定义列表中的每一个项目。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&lt;tr&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;code&gt;：用于创建表格中的行，表格中的每一行使用 &lt;code&gt;&lt;tr&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;code&gt; 标签来定义。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&lt;table&gt;&lt;&#x2F;table&gt;&lt;&#x2F;code&gt;：用来创建表格，包含表格的整体结构。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&lt;th&gt; &lt;th&gt;&lt;&#x2F;code&gt;用来定义表格中的表头单元格，&lt;code&gt;&lt;td&gt;&lt;&#x2F;code&gt; 用来定义表格中的数据单元格。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&lt;h2&gt;&lt;&#x2F;code&gt;：是HTML中的标题标签，表示”二级标题”。通常用来表示比一级标题更小的标题级别。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">xh</p>
+  <div class="site-description" itemprop="description">记录生活，分享感悟</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dululu.github.io/2024/12/07/Links%E7%9A%84HTML%E6%B8%B2%E6%9F%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Always on the way">
+      <meta itemprop="description" content="记录生活，分享感悟">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Links的HTML渲染 | Always on the way">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Links的HTML渲染
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-12-07 00:00:00" itemprop="dateCreated datePublished" datetime="2024-12-07T00:00:00+08:00">2024-12-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-03-21 19:20:09" itemprop="dateModified" datetime="2026-03-21T19:20:09+08:00">2026-03-21</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>为了写出一个看得下去的Links,借助<a target="_blank" rel="noopener" href="https://poe.com/ChatGPT">Poe</a>的帮助写了一些css和HTML<span id="more"></span></p>
+<ul>
+<li>在内联<code>CSS</code>样式中，可能会因为样式定义的格式问题而导致渲染出现异常。如果您的代码在某些情况下由于空格而无法正确渲染，您可以尝试去除代码中的空格，确保各个属性和数值之间没有多余的空格，以确保样式能够正确应用。</li>
+</ul>
+<h3 id="基本格式"><a href="#基本格式" class="headerlink" title="基本格式"></a>基本格式</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta"><!DOCTYPE <span class="keyword">html</span>></span></span><br><span class="line"><span class="tag"><<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>></span></span><br><span class="line"><span class="tag"><<span class="name">head</span>></span></span><br><span class="line"><span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span></span><br><span class="line"><span class="tag"><<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>></span></span><br><span class="line"><span class="tag"><<span class="name">title</span>></span>Friend Links<span class="tag"></<span class="name">title</span>></span></span><br><span class="line"><span class="tag"><<span class="name">style</span>></span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="comment">/* css代码 */</span></span></span><br><span class="line"><span class="language-css"></span><span class="tag"></<span class="name">style</span>></span></span><br><span class="line"><span class="tag"></<span class="name">head</span>></span></span><br><span class="line"></span><br><span class="line"><span class="tag"><<span class="name">body</span>></span></span><br><span class="line"><span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section-box gemini box-shadow-wrapper"</span>></span></span><br><span class="line">  <span class="tag"><<span class="name">section</span> <span class="attr">class</span>=<span class="string">"friends-section bg-color slide-down-in"</span>></span></span><br><span class="line">    <span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"firends-box"</span>></span></span><br><span class="line">      <span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"firends-item"</span>></span></span><br><span class="line">        <span class="tag"><<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.zhihu.com/people/L.M.Sherlock"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>></span></span><br><span class="line">          <span class="tag"><<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://pica.zhimg.com/v2-41f893b0cd84fb6a8c8f6d1bd29c9554_xll.jpg?source=32738c0c"</span>></span></span><br><span class="line">          <span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>></span></span><br><span class="line">            <span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top"</span>></span></span><br><span class="line">              Thoughts Memo</span><br><span class="line">            <span class="tag"></<span class="name">div</span>></span></span><br><span class="line">            <span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bottom"</span>></span>    </span><br><span class="line">            <span class="tag"></<span class="name">div</span>></span></span><br><span class="line">          <span class="tag"></<span class="name">div</span>></span></span><br><span class="line">        <span class="tag"></<span class="name">a</span>></span></span><br><span class="line">      <span class="tag"></<span class="name">div</span>></span></span><br><span class="line">      <span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"firends-item"</span>></span></span><br><span class="line">            <span class="comment"><!-- 新的链接 --></span></span><br><span class="line">      <span class="tag"></<span class="name">div</span>></span></span><br><span class="line">    <span class="tag"></<span class="name">div</span>></span></span><br><span class="line">  <span class="tag"></<span class="name">section</span>></span></span><br><span class="line"><span class="tag"></<span class="name">div</span>></span></span><br><span class="line"><span class="tag"></<span class="name">body</span>></span></span><br><span class="line"></span><br><span class="line"><span class="tag"></<span class="name">html</span>></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="：包含了文档的元信息和引用，不会直接显示在页面上。"><a href="#：包含了文档的元信息和引用，不会直接显示在页面上。" class="headerlink" title="<head>：包含了文档的元信息和引用，不会直接显示在页面上。"></a><code><head></code>：包含了文档的元信息和引用，不会直接显示在页面上。</h5><ul>
+<li><code><meta charset="UTF-8"></code>：设置文档的字符编码为<code>UTF-8</code>，以支持各种语言的文字显示。</li>
+<li><code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code>：设置页面视口的宽度等于设备宽度，并且初始缩放比例为1.0，有助于使页面在移动设备上更好地显示。</li>
+<li><code><title>Friend Links</title></code>：设置页面的标题为<code>"Friend Links"</code>，显示在浏览器标签页上。</li>
+</ul>
+<h5 id="：在这个标签中包含了CSS样式。"><a href="#：在这个标签中包含了CSS样式。" class="headerlink" title="<style>：在这个标签中包含了CSS样式。"></a><code><style></code>：在这个标签中包含了CSS样式。</h5><ul>
+<li><code>CSS</code>样式用于控制页面元素的外观和布局。</li>
+<li>在这段代码中，<code>CSS</code>样式定义了一些属性，如布局、尺寸、边距、圆角、动画效果等，用于美化和布局友情链接展示的元素。</li>
+<li>这段样式会应用到页面中具有对应类名的元素上，例如<code>.firends-box</code>、<code>.firends-item</code>、<code>.firends-item img</code>等。</li>
+<li>通过<code>CSS</code>样式，可以实现友情链接的排列、样式、交互效果等。</li>
+</ul>
+<h5 id=""><a href="#" class="headerlink" title="<div class="firends-item">"></a><code><div class="firends-item"></code></h5><ul>
+<li>类用于指定该<code><div></code>元素在页面中的某个特定样式或布局</li>
+<li>在 <code>HTML</code> 中，<code><section></code> 通常用于表示文档或应用程序中的一个独立的部分或区块，用于组织内容</li>
+</ul>
+<h5 id="自己更改css的类"><a href="#自己更改css的类" class="headerlink" title="自己更改css的类"></a>自己更改<code>css</code>的类</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag"><<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section-box"</span> <span class="attr">style</span>=<span class="string">"width: 100%; max-width: 100%; margin: 0 auto; padding: 10px;"</span>></span></span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.firends-box {</span><br><span class="line">  display: flex;</span><br><span class="line">  justify-content: space-between;</span><br><span class="line">  align-items: center;</span><br><span class="line">  flex-wrap: wrap;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h5 id="html表格"><a href="#html表格" class="headerlink" title="html表格"></a>html表格</h5><!-- New 3xN Table -->
+<p>This is an additional line of text.</p>
+<h2>Favorite Links:</h2>
+<ul>
+  <li><a href="URL1">Link 1</a></li>
+  <li><a href="URL2">Link 2</a></li>
+  <li><a href="URL3">Link 3</a></li>
+  <!-- Add more favorite links as needed -->
+</ul>
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+    <td>Row 1, Cell 3</td>
+  </tr>
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td>Row 2, Cell 2</td>
+    <td>Row 2, Cell 3</td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
+
+<ul>
+<li><code><p>ee</p></code> 段落元素，用来定义文本的段落</li>
+<li><code><ul></ul></code>：用来创建无序列表，列表项使用 <code><li></li></code> 标签来表示。</li>
+<li><code><li></li></code>：用来定义列表中的每一个项目。</li>
+<li><code><tr></tr></code>：用于创建表格中的行，表格中的每一行使用 <code><tr></tr></code> 标签来定义。</li>
+<li><code><table></table></code>：用来创建表格，包含表格的整体结构。</li>
+<li><code><th> <th></code>用来定义表格中的表头单元格，<code><td></code> 用来定义表格中的数据单元格。</li>
+<li><code><h2></code>：是HTML中的标题标签，表示”二级标题”。通常用来表示比一级标题更小的标题级别。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/09/%E5%8E%86%E5%8F%B2%E4%B8%8E%E4%BA%BA%E6%B0%91%E7%9A%84%E8%AE%B0%E5%BF%86/" rel="prev" title="历史与人民的记忆">
+                  <i class="fa fa-angle-left"></i> 历史与人民的记忆
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/12/12/%E6%97%A5%E8%AE%B0December-24/" rel="next" title="日记December™24">
+                  日记December™24 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">xh</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

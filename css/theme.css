@@ -1,0 +1,160 @@
+/* 主题切换 CSS 变量 */
+:root {
+  --bg-color: #fffcf2;
+  --text-color: #002a56;
+  --border-color: #002a56;
+  --secondary-bg: #fffcf2;
+  --secondary-text: #9faab5;
+  --link-hover-bg: #fffcf2;
+  --search-bg: #fffcf2;
+  --highlight-bg: #fff59b;
+  --code-bg: #f5f5f5;
+  --table-border: #002a56;
+}
+
+/* 暗黑模式 */
+[data-theme="dark"] {
+  --bg-color: #1a1a2e;
+  --text-color: #e4e4e7;
+  --border-color: #3f3f46;
+  --secondary-bg: #2d2d44;
+  --secondary-text: #a1a1aa;
+  --link-hover-bg: #2d2d44;
+  --search-bg: #2d2d44;
+  --highlight-bg: #3f3f46;
+  --code-bg: #2d2d44;
+  --table-border: #3f3f46;
+}
+
+/* 应用变量 */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.mask-border::before {
+  border-color: var(--border-color);
+}
+
+.header,
+.footer {
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+.menu-item:after,
+.page-number:after {
+  border-bottom-color: var(--text-color);
+}
+
+.post-list a,
+.post-gallery-item a,
+.post-footer a {
+  background-image: linear-gradient(var(--bg-color), var(--bg-color)), linear-gradient(var(--text-color), var(--text-color));
+}
+
+.search-popup-window {
+  background: var(--search-bg);
+  border-color: var(--border-color);
+}
+
+.search-header {
+  border-bottom-color: var(--border-color);
+}
+
+.search-header .search-input-container .search-input {
+  color: var(--text-color);
+  background-color: var(--search-bg);
+}
+
+.search-result-container .search-result-title {
+  color: var(--text-color);
+}
+
+.search-result-container a {
+  background-image: linear-gradient(var(--bg-color), var(--bg-color)), linear-gradient(var(--text-color), var(--text-color));
+}
+
+.search-result-container mark {
+  color: var(--text-color);
+  background-color: var(--highlight-bg);
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.profile .profile-content .profile-title,
+.post-head .post-info .post-title {
+  color: var(--text-color);
+}
+
+p, li, strong, em, del,
+.profile .profile-content .profile-body,
+.post-content li {
+  color: var(--text-color);
+}
+
+.post-content a {
+  background-image: linear-gradient(var(--text-color), var(--text-color)), linear-gradient(var(--text-color), var(--text-color));
+}
+
+.post-list-item .post-date,
+.year-title,
+.search-result-container .search-result-message {
+  color: var(--secondary-text);
+}
+
+blockquote {
+  border-left-color: var(--secondary-text);
+}
+
+table, td, th {
+  border-color: var(--table-border);
+}
+
+/* 主题切换按钮样式 */
+.menu-item .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+  transition: all 0.3s ease;
+  margin-top: -4px;
+}
+
+.menu-item .theme-toggle:hover {
+  background: var(--secondary-bg);
+}
+
+.menu-item .theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--text-color);
+}
+
+/* 隐藏亮色图标在亮色模式下 */
+[data-theme="light"] .theme-toggle .sun-icon,
+:root:not([data-theme="dark"]) .theme-toggle .sun-icon {
+  display: none;
+}
+
+/* 隐藏暗色图标在暗色模式下 */
+[data-theme="dark"] .theme-toggle .moon-icon {
+  display: none;
+}
+
+/* 响应式 */
+@media (max-width: 688px) {
+  .theme-toggle {
+    margin-left: 0.5rem;
+  }
+}

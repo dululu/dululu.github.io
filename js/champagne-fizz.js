@@ -8,10 +8,62 @@
   var ctx = canvas.getContext('2d');
   
   // 设置 canvas 样式 - 全屏固定定位
-  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;';
+  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:auto;';
+  
+  // 鼠标状态
+  var mouseX = 0, mouseY = 0;
+  var mouseActive = false;
+  var mouseDown = false;
+  
+  // 在鼠标位置生成气泡
+  function spawnBubbleAt(bx, by) {
+    if (bubbles.length >= MAX_BUBBLES) return;
+    var angle = Math.random() * Math.PI * 2;
+    var spread = Math.random() * 20;
+    var r = 2 + Math.random() * 8;
+    bubbles.push({
+      x: bx + Math.cos(angle) * spread,
+      y: by + Math.sin(angle) * spread,
+      radius: r,
+      baseRadius: r,
+      wobblePhase: Math.random() * Math.PI * 2,
+      wobbleFreq: 1.5 + Math.random() * 1.5,
+      wobbleAmp: (0.3 + Math.random() * 0.7) * r,
+      speedMult: 0.9 + Math.random() * 0.8,
+      opacity: 0.4 + Math.random() * 0.4,
+      highlightAngle: -0.6 + Math.random() * 0.3,
+      age: 0,
+      pulsePhase: Math.random() * Math.PI * 2,
+      pulseRate: 2 + Math.random() * 2
+    });
+  }
+  
+  // 鼠标事件
+  canvas.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    mouseActive = true;
+  });
+  canvas.addEventListener('mouseleave', function() {
+    mouseActive = false;
+    mouseDown = false;
+  });
+  canvas.addEventListener('mousedown', function(e) {
+    mouseDown = true;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    mouseActive = true;
+  });
+  canvas.addEventListener('mouseup', function() {
+    mouseDown = false;
+  });
   
   // 插入到 body 最前面
   document.body.insertBefore(canvas, document.body.firstChild);
+  
+  // 确保页面内容可以点击
+  var wrapper = document.querySelector('.wrapper');
+  if (wrapper) wrapper.style.position = 'relative';
   
   var _pad = 1;
   var width, height, dpr;
@@ -133,6 +185,19 @@
       
       b.wobblePhase += b.wobbleFreq * dt;
       b.x += Math.sin(b.wobblePhase) * b.wobbleAmp * dt * 2;
+      
+      // 鼠标推开气泡
+      if (mouseActive) {
+        var mdx = b.x - mouseX;
+        var mdy = b.y - mouseY;
+        var md = Math.sqrt(mdx * mdx + mdy * mdy);
+        if (md > 1 && md < 180) {
+          var push = (1 - md / 180);
+          push *= push * 8.0 * dt * 60;
+          b.x += (mdx / md) * push;
+          b.y += (mdy / md) * push * 0.5;
+        }
+      }
       
       b.radius = b.baseRadius * (1 + 0.05 * Math.sin(b.age * b.pulseRate));
       var heightFraction = 1 - (b.y / height);
@@ -281,6 +346,14 @@
     while (spawnAccumulator >= 1) {
       spawnBubble();
       spawnAccumulator -= 1;
+    }
+    
+    // 按住鼠标持续生成气泡
+    if (mouseDown) {
+      var holdSpawn = Math.ceil(8 * dt * 60);
+      for (var si = 0; si < holdSpawn; si++) {
+        spawnBubbleAt(mouseX, mouseY);
+      }
     }
     
     updateBubbles(dt);

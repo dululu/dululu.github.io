@@ -21,6 +21,7 @@
     var angle = Math.random() * Math.PI * 2;
     var spread = Math.random() * 20;
     var r = 2 + Math.random() * 8;
+    var theme = colorThemes[Math.floor(Math.random() * colorThemes.length)];
     bubbles.push({
       x: bx + Math.cos(angle) * spread,
       y: by + Math.sin(angle) * spread,
@@ -34,7 +35,8 @@
       highlightAngle: -0.6 + Math.random() * 0.3,
       age: 0,
       pulsePhase: Math.random() * Math.PI * 2,
-      pulseRate: 2 + Math.random() * 2
+      pulseRate: 2 + Math.random() * 2,
+      colorTheme: theme
     });
   }
   
@@ -93,6 +95,50 @@
   var MAX_BUBBLES = 600;
   var MAX_SPARKLES = 100;
   
+  // 气泡颜色主题 - 马卡龙色系
+  var colorThemes = [
+    { // 粉色
+      body: '255, 182, 193',
+      rim: '255, 105, 180',
+      highlight: '255, 240, 245'
+    },
+    { // 蓝色
+      body: '135, 206, 235',
+      rim: '70, 130, 180',
+      highlight: '240, 248, 255'
+    },
+    { // 紫色
+      body: '221, 160, 221',
+      rim: '147, 112, 219',
+      highlight: '245, 240, 255'
+    },
+    { // 薄荷绿
+      body: '152, 251, 152',
+      rim: '60, 179, 113',
+      highlight: '240, 255, 240'
+    },
+    { // 橙色
+      body: '255, 200, 150',
+      rim: '255, 140, 0',
+      highlight: '255, 250, 240'
+    },
+    { // 金色
+      body: '255, 215, 140',
+      rim: '218, 165, 32',
+      highlight: '255, 250, 235'
+    },
+    { // 青色
+      body: '64, 224, 208',
+      rim: '0, 139, 139',
+      highlight: '240, 255, 255'
+    },
+    { // 薰衣草
+      body: '230, 230, 250',
+      rim: '128, 128, 200',
+      highlight: '245, 245, 255'
+    }
+  ];
+  
   // 成核位点
   var nucleationSites = [];
   var NUM_SITES = 15;
@@ -132,6 +178,9 @@
     }
     radius *= _pad;
     
+    // 随机选择颜色主题
+    var theme = colorThemes[Math.floor(Math.random() * colorThemes.length)];
+    
     bubbles.push({
       x: x,
       y: height + radius,
@@ -145,13 +194,15 @@
       highlightAngle: -0.6 + Math.random() * 0.3,
       age: 0,
       pulsePhase: Math.random() * Math.PI * 2,
-      pulseRate: 2 + Math.random() * 2
+      pulseRate: 2 + Math.random() * 2,
+      colorTheme: theme
     });
   }
   
-  function spawnSparkle(x, y, bubbleRadius) {
+  function spawnSparkle(x, y, bubbleRadius, colorTheme) {
     var count = Math.floor(2 + bubbleRadius * 0.5);
     if (count > 6) count = 6;
+    var theme = colorTheme || { body: '160, 160, 160', rim: '100, 100, 100' };
     for (var i = 0; i < count; i++) {
       if (sparkles.length >= MAX_SPARKLES) return;
       var angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
@@ -163,7 +214,8 @@
         vy: Math.sin(angle) * speed - 0.5,
         life: 1.0,
         decay: 0.02 + Math.random() * 0.03,
-        size: 0.5 + Math.random() * 1 + bubbleRadius * 0.08
+        size: 0.5 + Math.random() * 1 + bubbleRadius * 0.08,
+        colorTheme: theme
       });
     }
   }
@@ -204,7 +256,7 @@
       b.radius *= 1 + heightFraction * 0.15;
       
       if (b.y - b.radius <= surfaceY) {
-        spawnSparkle(b.x, surfaceY, b.baseRadius);
+        spawnSparkle(b.x, surfaceY, b.baseRadius, b.colorTheme);
         bubbles.splice(i, 1);
         continue;
       }
@@ -235,19 +287,20 @@
     var x = b.x;
     var y = b.y;
     var fadeIn = Math.min(b.age * 3, 1);
+    var theme = b.colorTheme || { body: '160, 160, 160', rim: '100, 100, 100', highlight: '240, 240, 240' };
     
-    // 主体 - 单色灰
-    var bodyAlpha = b.opacity * 0.2 * fadeIn;
+    // 主体 - 彩色
+    var bodyAlpha = b.opacity * 0.25 * fadeIn;
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(160, 160, 160, ' + bodyAlpha + ')';
+    ctx.fillStyle = 'rgba(' + theme.body + ', ' + bodyAlpha + ')';
     ctx.fill();
     
-    // 边缘 - 深灰
-    var rimAlpha = b.opacity * 0.35 * fadeIn;
+    // 边缘 - 彩色
+    var rimAlpha = b.opacity * 0.4 * fadeIn;
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.strokeStyle = 'rgba(100, 100, 100, ' + rimAlpha + ')';
+    ctx.strokeStyle = 'rgba(' + theme.rim + ', ' + rimAlpha + ')';
     ctx.lineWidth = Math.max(0.5, r * 0.08);
     ctx.stroke();
     
@@ -263,10 +316,10 @@
       ctx.arc(x, y, r * 0.92, 0, Math.PI * 2);
       ctx.clip();
       var hlGrad = ctx.createRadialGradient(hlX, hlY, 0, hlX, hlY, hlR);
-      hlGrad.addColorStop(0, 'rgba(240, 240, 240, ' + hlAlpha * 0.9 + ')');
-      hlGrad.addColorStop(0.3, 'rgba(200, 200, 200, ' + hlAlpha * 0.5 + ')');
-      hlGrad.addColorStop(0.7, 'rgba(180, 180, 180, ' + hlAlpha * 0.1 + ')');
-      hlGrad.addColorStop(1, 'rgba(180, 180, 180, 0)');
+      hlGrad.addColorStop(0, 'rgba(' + theme.highlight + ', ' + hlAlpha * 0.9 + ')');
+      hlGrad.addColorStop(0.3, 'rgba(' + theme.body + ', ' + hlAlpha * 0.5 + ')');
+      hlGrad.addColorStop(0.7, 'rgba(' + theme.rim + ', ' + hlAlpha * 0.1 + ')');
+      hlGrad.addColorStop(1, 'rgba(' + theme.rim + ', 0)');
       ctx.fillStyle = hlGrad;
       ctx.beginPath();
       ctx.arc(hlX, hlY, hlR, 0, Math.PI * 2);
@@ -280,7 +333,7 @@
         var specR = Math.max(0.8, r * 0.12);
         ctx.beginPath();
         ctx.arc(specX, specY, specR, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(250, 250, 250, ' + specAlpha + ')';
+        ctx.fillStyle = 'rgba(255, 255, 255, ' + specAlpha + ')';
         ctx.fill();
       }
     }
@@ -291,6 +344,7 @@
       var s = sparkles[i];
       var alpha = s.life * 0.9;
       var size = s.size * s.life;
+      var theme = s.colorTheme || { body: '160, 160, 160', rim: '100, 100, 100' };
       
       ctx.save();
       ctx.translate(s.x, s.y);
@@ -298,15 +352,15 @@
       
       var glowR = size * 3;
       var glow = ctx.createRadialGradient(0, 0, 0, 0, 0, glowR);
-      glow.addColorStop(0, 'rgba(220, 220, 220, 0.8)');
-      glow.addColorStop(0.3, 'rgba(180, 180, 180, 0.3)');
-      glow.addColorStop(1, 'rgba(120, 120, 120, 0)');
+      glow.addColorStop(0, 'rgba(' + theme.body + ', 0.8)');
+      glow.addColorStop(0.3, 'rgba(' + theme.rim + ', 0.3)');
+      glow.addColorStop(1, 'rgba(' + theme.rim + ', 0)');
       ctx.fillStyle = glow;
       ctx.beginPath();
       ctx.arc(0, 0, glowR, 0, Math.PI * 2);
       ctx.fill();
       
-      ctx.fillStyle = 'rgba(255, 250, 235, 1)';
+      ctx.fillStyle = 'rgba(255, 255, 255, 1)';
       ctx.beginPath();
       ctx.arc(0, 0, Math.max(0.3, size * 0.4), 0, Math.PI * 2);
       ctx.fill();

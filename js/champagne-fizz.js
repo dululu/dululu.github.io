@@ -93,7 +93,6 @@
     }
     radius *= _pad;
     
-    var hueShift = (Math.random() - 0.5) * 20;
     bubbles.push({
       x: x,
       y: height + radius,
@@ -103,7 +102,6 @@
       wobbleFreq: 1.5 + Math.random() * 1.5,
       wobbleAmp: (0.3 + Math.random() * 0.7) * radius,
       speedMult: 0.7 + Math.random() * 0.6,
-      hueShift: hueShift,
       opacity: 0.25 + Math.random() * 0.35,
       highlightAngle: -0.6 + Math.random() * 0.3,
       age: 0,
@@ -186,18 +184,18 @@
     var y = b.y;
     var fadeIn = Math.min(b.age * 3, 1);
     
-    // 主体
-    var bodyAlpha = b.opacity * 0.2 * fadeIn;
+    // 主体 - 粉色
+    var bodyAlpha = b.opacity * 0.25 * fadeIn;
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(200, 180, 140, ' + bodyAlpha + ')';
+    ctx.fillStyle = 'rgba(255, 182, 193, ' + bodyAlpha + ')';
     ctx.fill();
     
-    // 边缘
-    var rimAlpha = b.opacity * 0.35 * fadeIn;
+    // 边缘 - 深粉色
+    var rimAlpha = b.opacity * 0.4 * fadeIn;
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.strokeStyle = 'rgba(220, 190, 150, ' + rimAlpha + ')';
+    ctx.strokeStyle = 'rgba(255, 105, 180, ' + rimAlpha + ')';
     ctx.lineWidth = Math.max(0.5, r * 0.08);
     ctx.stroke();
     
@@ -213,10 +211,10 @@
       ctx.arc(x, y, r * 0.92, 0, Math.PI * 2);
       ctx.clip();
       var hlGrad = ctx.createRadialGradient(hlX, hlY, 0, hlX, hlY, hlR);
-      hlGrad.addColorStop(0, 'rgba(255, 245, 220, ' + hlAlpha * 0.9 + ')');
-      hlGrad.addColorStop(0.3, 'rgba(240, 210, 170, ' + hlAlpha * 0.5 + ')');
-      hlGrad.addColorStop(0.7, 'rgba(200, 170, 130, ' + hlAlpha * 0.1 + ')');
-      hlGrad.addColorStop(1, 'rgba(200, 170, 130, 0)');
+      hlGrad.addColorStop(0, 'rgba(255, 240, 245, ' + hlAlpha * 0.9 + ')');
+      hlGrad.addColorStop(0.3, 'rgba(255, 192, 203, ' + hlAlpha * 0.5 + ')');
+      hlGrad.addColorStop(0.7, 'rgba(255, 160, 180, ' + hlAlpha * 0.1 + ')');
+      hlGrad.addColorStop(1, 'rgba(255, 160, 180, 0)');
       ctx.fillStyle = hlGrad;
       ctx.beginPath();
       ctx.arc(hlX, hlY, hlR, 0, Math.PI * 2);
@@ -230,7 +228,7 @@
         var specR = Math.max(0.8, r * 0.12);
         ctx.beginPath();
         ctx.arc(specX, specY, specR, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 252, 240, ' + specAlpha + ')';
+        ctx.fillStyle = 'rgba(255, 250, 250, ' + specAlpha + ')';
         ctx.fill();
       }
     }
@@ -248,9 +246,9 @@
       
       var glowR = size * 3;
       var glow = ctx.createRadialGradient(0, 0, 0, 0, 0, glowR);
-      glow.addColorStop(0, 'rgba(255, 240, 200, 0.8)');
-      glow.addColorStop(0.3, 'rgba(220, 180, 120, 0.3)');
-      glow.addColorStop(1, 'rgba(200, 149, 108, 0)');
+      glow.addColorStop(0, 'rgba(255, 220, 230, 0.8)');
+      glow.addColorStop(0.3, 'rgba(255, 182, 193, 0.3)');
+      glow.addColorStop(1, 'rgba(255, 105, 180, 0)');
       ctx.fillStyle = glow;
       ctx.beginPath();
       ctx.arc(0, 0, glowR, 0, Math.PI * 2);
@@ -273,7 +271,7 @@
       var wave = Math.sin(x * 0.01 + time * 1.2) * 1 + Math.sin(x * 0.025 + time * 0.8) * 0.5 + Math.sin(x * 0.005 + time * 0.5) * 1.5;
       ctx.lineTo(x, surfaceY + wave);
     }
-    ctx.strokeStyle = 'rgba(200, 170, 130, 0.1)';
+    ctx.strokeStyle = 'rgba(255, 182, 193, 0.15)';
     ctx.lineWidth = 1;
     ctx.stroke();
   }

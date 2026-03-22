@@ -7,67 +7,54 @@
   canvas.id = 'champagne-canvas';
   var ctx = canvas.getContext('2d');
   
-  // 设置 canvas 样式 - 绝对定位在 profile 区域
-  canvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;border-radius:8px;';
+  // 设置 canvas 样式 - 全屏固定定位
+  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;';
   
-  // 找到 profile 容器并插入 canvas
-  var profileContainer = document.querySelector('.profile');
-  if (!profileContainer) return;
-  
-  // 设置 profile 为相对定位
-  profileContainer.style.position = 'relative';
-  profileContainer.style.overflow = 'hidden';
-  profileContainer.insertBefore(canvas, profileContainer.firstChild);
-  
-  // 确保内容在 canvas 之上
-  var profileContent = profileContainer.querySelector('.post-content');
-  if (profileContent) profileContent.style.position = 'relative';
-  var profileImage = profileContainer.querySelector('.profile-image');
-  if (profileImage) profileImage.style.position = 'relative';
+  // 插入到 body 最前面
+  document.body.insertBefore(canvas, document.body.firstChild);
   
   var _pad = 1;
   var width, height, dpr;
   
   function resize() {
-    var rect = profileContainer.getBoundingClientRect();
     dpr = Math.min(window.devicePixelRatio || 1, 2);
-    width = rect.width;
-    height = rect.height;
+    width = window.innerWidth;
+    height = window.innerHeight;
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    initNucleationSites();
   }
   
   window.addEventListener('resize', resize);
   resize();
   
   // 可调参数
-  var BUBBLE_RATE = 2;       // 降低气泡产生率
-  var RISE_SPEED = 1.2;      // 稍微降低上升速度
+  var BUBBLE_RATE = 4;
+  var RISE_SPEED = 1.5;
   
   // 气泡池
   var bubbles = [];
   var sparkles = [];
-  var MAX_BUBBLES = 300;     // 减少最大气泡数
-  var MAX_SPARKLES = 50;
+  var MAX_BUBBLES = 600;
+  var MAX_SPARKLES = 100;
   
   // 成核位点
   var nucleationSites = [];
-  var NUM_SITES = 8;
+  var NUM_SITES = 15;
   
   function initNucleationSites() {
     nucleationSites = [];
     for (var i = 0; i < NUM_SITES; i++) {
       nucleationSites.push({
-        x: width * 0.1 + (width * 0.8) * (i / (NUM_SITES - 1)) + (Math.random() - 0.5) * 30,
-        jitter: Math.random() * 15
+        x: width * 0.05 + (width * 0.9) * (i / (NUM_SITES - 1)) + (Math.random() - 0.5) * 50,
+        jitter: Math.random() * 30
       });
     }
   }
   initNucleationSites();
-  window.addEventListener('resize', initNucleationSites);
   
   function spawnBubble() {
     if (bubbles.length >= MAX_BUBBLES) return;
@@ -83,13 +70,13 @@
     var sizeRoll = Math.random();
     var radius;
     if (sizeRoll < 0.55) {
-      radius = 0.8 + Math.random() * 1.5;
+      radius = 1.5 + Math.random() * 2.5;
     } else if (sizeRoll < 0.85) {
-      radius = 2 + Math.random() * 2;
+      radius = 4 + Math.random() * 4;
     } else if (sizeRoll < 0.96) {
-      radius = 4 + Math.random() * 2.5;
+      radius = 8 + Math.random() * 6;
     } else {
-      radius = 6 + Math.random() * 3;
+      radius = 12 + Math.random() * 8;
     }
     radius *= _pad;
     

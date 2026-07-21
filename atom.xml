@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>xh</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <icon>https://dululu.github.io/icon.png</icon>
+  <id>https://dululu.github.io/</id>
+  <link href="https://dululu.github.io/" rel="alternate"/>
+  <link href="https://dululu.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, xh</rights>
+  <subtitle>记录生活，分享感悟</subtitle>
+  <title>Always on the way</title>
+  <updated>2026-07-21T23:06:05.027Z</updated>
+  <entry>
+    <author>
+      <name>xh</name>
+    </author>
+    <id>https://dululu.github.io/2026/07/22/%E6%AC%A2%E8%BF%8E/</id>
+    <link href="https://dululu.github.io/2026/07/22/%E6%AC%A2%E8%BF%8E/"/>
+    <published>2026-07-21T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这里还没有文章，敬请期待]]>
+    </summary>
+    <title>欢迎</title>
+    <updated>2026-07-21T23:06:05.027Z</updated>
+  </entry>
+</feed>
